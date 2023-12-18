@@ -11,9 +11,18 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
    </p>
    </div>
    </div>
-   <div className="col-span-5">
-<Image src="/images/hero_photo.png" alt="hero image" width={400} height={500} />
+   <div className="rounded-full bd-[#181818] w-500 h-400 relative">
+    <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+            <Image
+              src="/images/hero_photo.png"
+              alt="hero image"
+              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              width={300}
+              height={300}
+            />
+          </div>
    </div>
+   
     </section>
 )};
 
