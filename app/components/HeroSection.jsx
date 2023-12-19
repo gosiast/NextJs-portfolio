@@ -16,8 +16,14 @@ const HeroSection = () => {
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
    </p>
    <div>
-    <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-pink-700 via-purple-400 to-blue-400 hover:bg-slate-400 text-white hover:text-black mb-3">Hire Me</button>
-    <button className= "px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-transparent hover:bg-slate-200 text-white hover:text-black border border-white mb-3">Download CV</button>
+    <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-pink-700 via-purple-400 to-blue-400 hover:bg-slate-400 text-white hover:text-black mb-3">
+        Hire Me
+        </button>
+    <button className= "px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-transparent from-pink-700 via-purple-400 to-blue-400 hover:bg-slate-200 text-white hover:text-black border border mb-3">
+       <span>
+        Download CV
+        </span> 
+        </button>
    </div>
    </div>
    </div>
