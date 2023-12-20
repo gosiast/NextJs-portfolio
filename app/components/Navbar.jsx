@@ -22,7 +22,7 @@ const NavLinks = [
 ]
 
 const Navbar = () => {
-    const [navbarOpen, setNavbarOpen] = useState(false);
+    const [navbarOpen, setNavbarOpen] = useState(true);
     return (
         <nav className="fixed top-0 left-0 right-0 z-10 bg-[#0b0b0b] bg-opacity-90">
              <div className="flex flex-wrap items-center justify-between mx-auto px-4"> 
