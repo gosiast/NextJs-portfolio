@@ -1,11 +1,11 @@
 "use client";
 import React, {useState} from "react";
 import Link from "next/link";
-import NavLink from "./NAvLink";
-import { Bars4Icon, xMarkIcon } from "@heroicons/react/24/solid";
+import NavLink from "./NavLink";
+import { Bars4Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import MenuOverlay from "./MenuOverlay";
 
-
-const NavLinks = [
+const navLinks = [
 {
     title: "About",
     path: "#about",
@@ -21,6 +21,7 @@ const NavLinks = [
    }
 ]
 
+// when useState is false then the icon isn't displayed
 const Navbar = () => {
     const [navbarOpen, setNavbarOpen] = useState(true);
     return (
@@ -45,28 +46,24 @@ const Navbar = () => {
               onClick={() => setNavbarOpen(false)}
               className="flex items-center px-3 py-2 border rounded border-slate-200 text-white hover:text-white hover:border-white"
             >
-              <xMarkIcon className="h-5 w-5" />
+              <XMarkIcon className="h-5 w-5" />
             </button>
     )
 }
                 </div>
-             <div className="menu hidden block md:w-auto" id="navbar">
-               <ul className="flex p-8 md:p-0 md:flex-row md:space-x-8 mt-0">
-                {
-                     NavLinks.map((link, index) => (
-                        <li key={index}>  
-                        <NavLink href={link.path} title={link.title} />
-                        </li>
-                     )     
-                     )
-                }           
-                </ul> 
-
+             <div className="menu hidden md:block md:w-auto" id="navbar">
+          <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
+            {navLinks.map((link, index) => (
+              <li key={index}>
+                <NavLink href={link.path} title={link.title} />
+              </li>
+            ))}
+          </ul>
+        </div>
              </div>
-             </div>
+      {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
         </nav>
-       
     )
 }
 
-export default Navbar
+export default Navbar;
