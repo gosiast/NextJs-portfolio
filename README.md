@@ -29,3 +29,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 Thank you https://github.com/judygab for your Tutorial:
  https://www.youtube.com/watch?v=Kb1f5bvF6f4&ab_channel=webdecoded
+
+ pictures generated using 
+ https://app.leonardo.ai/ai-generations
+ 

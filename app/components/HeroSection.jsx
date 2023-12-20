@@ -24,8 +24,8 @@ const HeroSection = () => {
       ]}
       wrapper="span"
       speed={50}
-      width ={300}
-      height={300}
+      width ={500}
+      height={500}
       repeat={Infinity}
       priority = {true}
     />
