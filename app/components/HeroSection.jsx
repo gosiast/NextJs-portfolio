@@ -24,8 +24,12 @@ const HeroSection = () => {
       ]}
       wrapper="span"
       speed={50}
+      width ={300}
+      height={300}
       repeat={Infinity}
+      priority = {true}
     />
+    <br/>
     </h1>
    <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6">
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
