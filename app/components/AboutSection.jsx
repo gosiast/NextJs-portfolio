@@ -8,7 +8,7 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul>
+      <ul className="list-disc pl-5">
         <li>
           Frontend Technologies: HTML5, CSS3, ES6, JavaScript, Bootstrap,
           Responsive Web Design
@@ -24,7 +24,7 @@ const TAB_DATA = [
     title: "Education",
     id: "education",
     content: (
-      <ul>
+      <ul className="list-disc pl-5">
         <li>
           <a href="https://www.shecodes.io/" className="shecodes link">
             SheCodes
@@ -38,7 +38,7 @@ const TAB_DATA = [
     title: "Certifications",
     id: "certifications",
     content: (
-      <ul>
+      <ul className="list-disc pl-5">
         <li>Learn the Command Line- Codecademy 06/2023</li>
         <li>SheCodes React - 10/2022</li>
         <li>SheCodes Responsive - 04/2022</li>
@@ -87,7 +87,7 @@ const AboutSection = () => {
             and I strongly believe that we should take the opportunities that
             are waiting for us in the world.
           </p>
-          <div className="flex flex-row mt-8">
+          <div className="flex flex-row justify-start mt-8">
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
@@ -111,7 +111,7 @@ const AboutSection = () => {
             </TabButton>
           </div>
           <div className="mt-8">
-{TAB_DATA.find((t) => t.id === tab).content}
+            {TAB_DATA.find((t) => t.id === tab).content}
           </div>
         </div>
       </div>
