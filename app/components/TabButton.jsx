@@ -6,7 +6,7 @@ import React from "react";
 const TabButton = ( {active, selectTab, children} ) => {
     // so depending if it's active, there is a condition
     // to what will happen with the button
-    const buttonClasses = active ? 'text-white border-b border-pink-300' : 'text-[$ADB7BE]'
+    const buttonClasses = active ? 'text-white border-b border-pink-300' : 'text-[#ADB7BE]'
   return (
     //onClick what happens when we click the button
     <button onClick={selectTab}>
