@@ -26,13 +26,11 @@ const TAB_DATA = [
     content: (
       <ul>
         <li>
-          Frontend Technologies: HTML5, CSS3, ES6, JavaScript, Bootstrap,
-          Responsive Web Design
+          <a href="https://www.shecodes.io/" className="shecodes link">
+            SheCodes
+          </a>
         </li>
-        <li>Frameworks and Libraries: ReactJs, NextJs</li>
-        <li>Version Control: Git, GitHub, GitLab</li>
-        <li>Responsive Web Design</li>
-        <li>Development Tools: ESLint</li>
+        <li>MA Applied Linguistics, University of Warsaw, Poland</li>
       </ul>
     ),
   },
