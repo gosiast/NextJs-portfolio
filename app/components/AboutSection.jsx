@@ -56,21 +56,12 @@ const AboutSection = () => {
               Education{" "}
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("certification")}
-              active={tab === "certification"}
+              selectTab={() => handleTabChange("certifications")}
+              active={tab === "certifications"}
             >
               {" "}
-              Certification{" "}
+              Certifications{" "}
             </TabButton>
-            <span className="mr-3 font-semibold hover:text-white text-[#ADB7BE border-b border-pink-400">
-              Skills
-            </span>
-            <span className="mr-3 font-semibold hover:text-white text-[#ADB7BE border-b border-pink-400">
-              Education
-            </span>
-            <span className="mr-3 font-semibold hover:text-white text-[#ADB7BE border-b border-pink-400">
-              Experience
-            </span>
           </div>
         </div>
       </div>
