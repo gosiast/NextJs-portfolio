@@ -1,21 +1,20 @@
 "use client";
-import React, {useTransition, useState } from "react";
+import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
 
 // we create tab and useState so it stores info which tab is open
 const AboutSection = () => {
-   const [tab, setTab] = useState("skills");
-   const [startTransition, isPending] = useTransition ();
+  const [tab, setTab] = useState("skills");
+  const [isPending, startTransition] = useTransition();
 
-   //so it transitions and updates the UI with the hook above
-   // it updates the state without blocking the UI
-   const handleTabChange = (id) => {
-     startTransition(() => {
-       setTab(id);
-     });
-   };
-
+  //so it transitions and updates the UI with the hook above
+  // it updates the state without blocking the UI
+  const handleTabChange = (id) => {
+    startTransition(() => {
+      setTab(id);
+    });
+  };
 
   return (
     <section className="text-white">
@@ -42,9 +41,26 @@ const AboutSection = () => {
             that are waiting for us in the world.
           </p>
           <div className="flex flex-row mt-8">
-            < TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}> 
-            {" "}
-            Skills{" "}
+            <TabButton
+              selectTab={() => handleTabChange("skills")}
+              active={tab === "skills"}
+            >
+              {" "}
+              Skills{" "}
+            </TabButton>
+            <TabButton
+              selectTab={() => handleTabChange("education")}
+              active={tab === "education"}
+            >
+              {" "}
+              Education{" "}
+            </TabButton>
+            <TabButton
+              selectTab={() => handleTabChange("certification")}
+              active={tab === "certification"}
+            >
+              {" "}
+              Certification{" "}
             </TabButton>
             <span className="mr-3 font-semibold hover:text-white text-[#ADB7BE border-b border-pink-400">
               Skills
