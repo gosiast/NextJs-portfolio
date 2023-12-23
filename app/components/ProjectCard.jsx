@@ -1,5 +1,6 @@
 import React from "react";
 
+//a few props: imgUrl, title,
 const ProjectCard = ({ imgUrl, title, description }) => {
   return (
     <div>
