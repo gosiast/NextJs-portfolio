@@ -44,8 +44,8 @@ const projectsData = [
     description:
       "Look at some more projects of mine on Frontend Mentor where I contribute to an open source and practice my skills.",
     image: "/images/projects/frontend_mentor_profile.png",
-    githubUrl: "",
-    websiteUrl: "https://malgorzatastanoportfolio.netlify.app/",
+    githubUrl: "https://github.com/gosiast",
+    websiteUrl: "https://www.frontendmentor.io/profile/gosiast",
   },
 ];
 
@@ -62,6 +62,8 @@ const ProjectsSection = () => {
             title={project.title}
             description={project.description}
             imgUrl={project.image}
+            githubUrl={project.githubUrl}
+            websiteUrl={project.websiteUrl}
           />
         ))}
       </div>
