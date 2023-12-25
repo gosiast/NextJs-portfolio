@@ -39,7 +39,14 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-5">
-        <li>Learn the Command Line- Codecademy 06/2023</li>
+        <li>
+          <a
+            href="/certificates/malgorzata_stano_ certificate_learn_command_line.pdf"
+            target="_blank"
+          >
+            Learn the Command Line- Codecademy 06/2023
+          </a>{" "}
+        </li>
         <li>SheCodes React - 10/2022</li>
         <li>SheCodes Responsive - 04/2022</li>
         <li>SheCodes Plus - 02/2022</li>
