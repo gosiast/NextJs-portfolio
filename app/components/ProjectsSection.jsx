@@ -40,10 +40,10 @@ const projectsData = [
   },
   {
     id: 5,
-    title: "First Website",
+    title: "Frontend Mentor",
     description:
-      "Built with HTML, CSS and Javascript. Final project of the SheCodes Basic course",
-    image: "/images/projects/first_website.png",
+      "Look at some more projects of mine on Frontend Mentor where I contribute to an open source and practice my skills.",
+    image: "/images/projects/frontend_mentor_profile.png",
     githubUrl: "",
     websiteUrl: "https://malgorzatastanoportfolio.netlify.app/",
   },
