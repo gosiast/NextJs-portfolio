@@ -55,7 +55,7 @@ const HeroSection = () => {
           <Image
             src="/images/hero_photo.png"
             alt="animation of me, sitting with a computer and world map in the background"
-            className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 w-full sm:w-full"
             width={400}
             height={400}
           />
