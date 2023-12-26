@@ -29,7 +29,7 @@ const TAB_DATA = [
           <a
             href="https://www.shecodes.io/"
             target="_blank"
-            className="website link to the shecodes platform hover:underline-offset-4"
+            className="website link to the shecodes platform hover:underline-offset-1"
           >
             SheCodes Training Program
           </a>
