@@ -35,8 +35,8 @@ const projectsData = [
     description:
       "My First Portfolio build with HTMl and CSS. In this project I learnt how to build responsive websites. Final project of the SheCodes Responsive course",
     image: "/images/projects/first_portfolio.png",
-    githubUrl: "",
-    websiteUrl: "",
+    githubUrl: "https://github.com/gosiast/my-portfolio/tree/main",
+    websiteUrl: "https://malgorzatastanoportfolio.netlify.app/",
   },
   {
     id: 5,
