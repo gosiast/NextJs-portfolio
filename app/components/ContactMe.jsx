@@ -8,21 +8,28 @@ import Image from "next/image";
 const ContactMe = () => {
   return (
     <section className="grid grid-cols-1 sm:grid-cols-12">
-      <div className="col-span-8 place-self-center text-center sm:text-left">
+      <div className="col-span-8 place-self-center text-left">
         <h5 className="text-xl font-bold text-white my-2">Let's Connect!</h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
           I am currently looking for full-time remote (or hybrid from Barcelona)
           opportunities as a Junior Frontend Developer. Feel free to reach out!
         </p>
-        <div className="socials flex flex-row gap-2">
+        <div className="socials flex flex-row gap-2 m-2">
           <Link href="https://github.com/gosiast">
-            <Image src={GithubIcon} alt="GitHub Icon" />
+            <Image src={GithubIcon} alt="GitHub Icon" className="h-14 w-14" />
           </Link>
-          <Link href="https://www.linkedin.com/in/malgorzata-stano/">
+          <Link
+            href="https://www.linkedin.com/in/malgorzata-stano/"
+            className="h-12 w-12"
+          >
             <Image src={LinkedIcon} alt="LinkedIn Icon" />
           </Link>
-          <Link href="mailto:stano.malgorzata@gmail.com" target="_blank">
-            <Image src={EmailIcon} alt="Email Icon" className="text:white" />
+          <Link
+            href="mailto:stano.malgorzata@gmail.com"
+            target="_blank"
+            className="h-12 w-12"
+          >
+            <Image src={EmailIcon} alt="Email Icon" />
           </Link>
         </div>
       </div>
