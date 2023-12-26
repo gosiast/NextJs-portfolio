@@ -1,6 +1,7 @@
 import React from "react";
 import GithubIcon from "../../public/images/githubIcon.svg";
 import LinkedIcon from "../../public/images/linkedinIcon.svg";
+import EmailIcon from "../../public/images/emailIcon.svg";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -21,6 +22,11 @@ const ContactMe = () => {
         <div className="socials flex flex-row gap-2">
           <Link href="https://www.linkedin.com/in/malgorzata-stano/">
             <Image src={LinkedIcon} alt="LinkedIn Icon" />
+          </Link>
+        </div>
+        <div className="socials flex flex-row gap-2">
+          <Link href="mailto:stano.malgorzata@gmail.com" target="_blank">
+            <Image src={EmailIcon} alt="Email Icon" />
           </Link>
         </div>
       </div>
