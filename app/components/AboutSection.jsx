@@ -132,16 +132,18 @@ const AboutSection = () => {
             About Me
           </h2>
           <p className="text-[#ADB7BE] text-base md:text-lg mb-6">
-            Hey, it's <strong>Małgorzata</strong> here, but call me{" "}
-            <strong>Gosia</strong>. I'm Polish but I've been living abroad over
-            the past years. Currently, Spain has become my home. Since 2019 I've
-            been working as an English Teacher. In <strong>2021</strong> I've
-            decided to shift my career and I fell in love with coding. It's
-            fascinating, challenging but incredibly rewarding. I would like to
-            continue to grow as a Frontend Developer and learn more about the IT
-            sector. I live by the <strong>“World Is Your Oyster”</strong> phrase
-            and I strongly believe that we should take the opportunities that
-            are waiting for us in the world.
+            Hey, it&apos;s <strong>Małgorzata</strong> here, but call me{" "}
+            <strong className="text-pink-400">Gosia</strong>. I&apos;m Polish
+            but I&apos;ve been living abroad over the past years. Currently,
+            Spain has become my home. Since 2019 I&apos;ve been working as an
+            English Teacher. In <strong>2021</strong> I've decided to shift my
+            career and I fell in love with coding. It&apos;s fascinating,
+            challenging but incredibly rewarding. I would like to continue to
+            grow as a Frontend Developer and learn more about the IT sector. I
+            live by the{" "}
+            <strong className="text-pink-400">“World Is Your Oyster”</strong>{" "}
+            phrase and I strongly believe that we should take the opportunities
+            that are waiting for us in the world.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton

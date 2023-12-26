@@ -7,9 +7,11 @@ import Image from "next/image";
 
 const ContactMe = () => {
   return (
-    <section className="grid grid-cols-1 sm:grid-cols-12">
+    <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative">
       <div className="col-span-8 place-self-center text-left">
-        <h5 className="text-xl font-bold text-white my-2">Let's Connect!</h5>
+        <h5 className="text-xl font-bold text-white my-2">
+          Let&apos;s Connect!
+        </h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
           I am currently looking for full-time remote (or hybrid from Barcelona)
           opportunities as a Junior Frontend Developer. Feel free to reach out!
