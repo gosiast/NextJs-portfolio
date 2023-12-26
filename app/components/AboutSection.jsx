@@ -120,7 +120,7 @@ const AboutSection = () => {
 
   return (
     <section className="text-white">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center xl:gap-16 sm:py-16 xl:px-16">
+      <div className=" display- block md:grid md:grid-cols-2 gap-8 items-center xl:gap-16 sm:py-16 xl:px-16">
         <Image
           src="/images/oyster_image.png"
           alt="image of an oyster with the world instead of the pearl"
@@ -128,7 +128,7 @@ const AboutSection = () => {
           height={500}
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-center text-white font-bold mb-4 mt-2 text-xl sm:text:5xl lg:text-3xl">
+          <h2 className="text-center text-white font-bold mb-4 mt-2 text-2xl sm:text:5xl lg:text-3xl">
             About Me
           </h2>
           <p className="text-[#ADB7BE] text-justify md:text-lg mb-6">

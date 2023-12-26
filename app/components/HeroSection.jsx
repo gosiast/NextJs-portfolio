@@ -6,7 +6,7 @@ import { TypeAnimation } from "react-type-animation";
 const HeroSection = () => {
   return (
     <section className="lg:flex px-0">
-      <div className="grid grid-cols-1 sm:grid-cols-12">
+      <div className="display-block grid grid-cols-1 sm:grid-cols-12">
         <div className="col-span-8 place-self-center text-center sm:text-left">
           <h1 className="text-white mb-4 text-4xl sm:text:5xl lg:text-5xl font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-br from-pink-700 via-purple-400 to-blue-400 hover:bg-slate-400">
@@ -31,7 +31,7 @@ const HeroSection = () => {
             />
             <br />
           </h1>
-          <p className="text-[#ADB7BE] text-base sm:text-m lg:text-l mb-6">
+          <p className="text-[#ADB7BE] text-base sm:text-m lg:text-l mb-8">
             Welcome to my digital playground! I&apos;m on a journey to craft
             seamless and captivating web experiences. Dive in, explore my
             creations, and get to know the code that brings ideas to life.
