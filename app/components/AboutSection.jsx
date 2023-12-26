@@ -26,8 +26,12 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-5">
         <li>
-          <a href="https://www.shecodes.io/" className="shecodes link">
-            SheCodes
+          <a
+            href="https://www.shecodes.io/"
+            target="_blank"
+            className="website link to the shecodes platform hover:underline-offset-4"
+          >
+            SheCodes Training Program
           </a>
         </li>
         <li>MA Applied Linguistics, University of Warsaw, Poland</li>
@@ -43,14 +47,59 @@ const TAB_DATA = [
           <a
             href="/certificates/malgorzata_stano_ certificate_learn_command_line.pdf"
             target="_blank"
+            className="hover:text-pink-400 
+    hover:duration-300 hover:undeline"
           >
-            Learn the Command Line- Codecademy 06/2023
-          </a>{" "}
+            Learn the Command Line
+          </a>
+          - Codecademy 06/2023{" "}
         </li>
-        <li>SheCodes React - 10/2022</li>
-        <li>SheCodes Responsive - 04/2022</li>
-        <li>SheCodes Plus - 02/2022</li>
-        <li>SheCodes Basics - 10/2021</li>
+        <li>
+          <a
+            href="/certificates/SheCodesReactCertificate.png"
+            target="_blank"
+            className="hover:text-pink-400 
+    hover:duration-300 hover:undeline"
+          >
+            SheCodes React{" "}
+          </a>
+          - 10/2022
+        </li>
+        <li>
+          {" "}
+          <a
+            href="/certificates/SheCodesResponsiveCertificate.png"
+            target="_blank"
+            className="hover:text-pink-400 
+    hover:duration-300 hover:undeline"
+          >
+            SheCodes Responsive{" "}
+          </a>
+          - 04/2022
+        </li>
+        <li>
+          {" "}
+          <a
+            href="/certificates/SheCodesPlusCertificate.png"
+            target="_blank"
+            className="hover:text-pink-400 
+    hover:duration-300 hover:undeline"
+          >
+            SheCodes Plus{" "}
+          </a>
+          - 02/2022
+        </li>
+        <li>
+          <a
+            href="/certificates/SheCodesBasicCertificate.png"
+            target="_blank"
+            className="hover:text-pink-400 
+    hover:duration-300 hover:undeline"
+          >
+            SheCodes Basics{" "}
+          </a>
+          - 10/2021
+        </li>
       </ul>
     ),
   },
