@@ -5,7 +5,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const HeroSection = () => {
   return (
-    <section className="lg:flex">
+    <section className="lg:flex px-0">
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <div className="col-span-8 place-self-center text-center sm:text-left">
           <h1 className="text-white mb-4 text-4xl sm:text:5xl lg:text-5xl font-extrabold">
@@ -42,7 +42,9 @@ const HeroSection = () => {
             </button>
             <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-transparent from-pink-700 via-purple-400 to-blue-400 hover:bg-slate-200 text-white hover:text-black border mb-3">
               <span>
-                <a>Download CV</a>
+                <a href="/Malgorzata_Stano_Resume.pdf" target="_blank">
+                  Download CV
+                </a>
               </span>
             </button>
           </div>
