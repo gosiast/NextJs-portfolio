@@ -1,4 +1,8 @@
 import React from "react";
+import GithubIcon from "../../public/images/githubIcon.svg";
+import LinkedIcon from "../../public/images/linkedinIcon.svg";
+import Link from "next/link";
+import Image from "next/image";
 
 const ContactMe = () => {
   return (
@@ -9,6 +13,16 @@ const ContactMe = () => {
           I am currently looking for full-time remote (or hybrid from Barcelona)
           opportunities as a Junior Frontend Developer. Feel free to reach out!
         </p>
+        <div className="socials flex flex-row gap-2">
+          <Link href="https://github.com/gosiast">
+            <Image src={GithubIcon} alt="GitHub Icon" />
+          </Link>
+        </div>
+        <div className="socials flex flex-row gap-2">
+          <Link href="https://www.linkedin.com/in/malgorzata-stano/">
+            <Image src={LinkedIcon} alt="LinkedIn Icon" />
+          </Link>
+        </div>
       </div>
     </section>
   );
