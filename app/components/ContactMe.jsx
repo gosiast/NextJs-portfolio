@@ -13,10 +13,10 @@ const ContactMe = () => {
     >
       {" "}
       <div className="md:w-1/2 text-center md:text-left">
-        <h5 className="text-2xl font-bold text-white my-2">
+        <h5 className="text-3xl font-bold text-white my-2">
           Let&apos;s Connect!
         </h5>
-        <p className="text-[#ADB7BE] mb-4 max-w-md">
+        <p className="text-[#ADB7BE] mb-4 max-w-md text-justify">
           I am currently looking for full-time remote (or hybrid from Barcelona)
           opportunities as a Junior Frontend Developer. Feel free to reach out!
         </p>

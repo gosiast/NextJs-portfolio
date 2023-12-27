@@ -53,7 +53,7 @@ const ProjectsSection = () => {
   return (
     <>
       <h2
-        className="text-center text-3xl font-bold text-white mt-4 mb-5"
+        className="text-center text-4xl font-bold text-white mt-4 mb-6"
         id="projects"
       >
         My Projects

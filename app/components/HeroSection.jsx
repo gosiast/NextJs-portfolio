@@ -36,10 +36,10 @@ const HeroSection = () => {
             <br />
             <hr />
           </h1>
-          <p className="text-[#ADB7BE] text-base sm:text-m lg:text-xl mb-10">
+          <p className="text-[#ADB7BE] text-base sm:text-m lg:text-xl mb-10 text-justify">
             Welcome to my digital playground! I&apos;m on a journey to craft
             seamless and captivating web experiences. Dive in, explore my
-            creations, and get to know the code that brings ideas to life.
+            creations, and get to know the code that brings ideas to life 💡
           </p>
           <div>
             <button className="px-7 py-4 w-full sm:w-fit rounded-full mr-5 bg-gradient-to-br from-pink-700 via-purple-400 to-blue-400 hover:bg-slate-400 text-white hover:text-black mb-3">
@@ -47,9 +47,13 @@ const HeroSection = () => {
                 Hire Me
               </a>
             </button>
-            <button className="px-7 py-3 w-full sm:w-fit rounded-full mr-5 bg-transparent from-pink-700 via-purple-400 to-blue-400 hover:bg-slate-200 text-white hover:text-black border mb-3">
+            <button className="px-7 py-4 w-full sm:w-fit rounded-full mr-5 bg-transparent from-pink-700 via-purple-400 to-blue-400 hover:bg-slate-200 text-white hover:text-black border mb-3">
               <span>
-                <a href="/Malgorzata_Stano_Resume.pdf" target="_blank">
+                <a
+                  href="/Malgorzata_Stano_Resume.pdf"
+                  download="Malgorzata_Stano_Resume.pdf"
+                  target="_blank"
+                >
                   Download CV
                 </a>
               </span>
