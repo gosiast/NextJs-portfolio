@@ -9,29 +9,25 @@ const ContactMe = () => {
   return (
     <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative">
       <div className="col-span-8 place-self-center text-left">
-        <h5 className="text-xl font-bold text-white my-2">
+        <h5 className="text-2xl font-bold text-white my-2">
           Let&apos;s Connect!
         </h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
           I am currently looking for full-time remote (or hybrid from Barcelona)
           opportunities as a Junior Frontend Developer. Feel free to reach out!
         </p>
-        <div className="socials flex flex-row gap-2 m-2">
+        <div className="socials flex flex-row gap-4">
           <Link href="https://github.com/gosiast">
-            <Image src={GithubIcon} alt="GitHub Icon" className="h-14 w-14" />
+            <Image src={GithubIcon} alt="GitHub Icon" className="w-12 h-12" />
           </Link>
           <Link
             href="https://www.linkedin.com/in/malgorzata-stano/"
             className="h-12 w-12"
           >
-            <Image src={LinkedIcon} alt="LinkedIn Icon" />
+            <Image src={LinkedIcon} alt="LinkedIn Icon" className="h-12 w-12" />
           </Link>
-          <Link
-            href="mailto:stano.malgorzata@gmail.com"
-            target="_blank"
-            className="h-12 w-12"
-          >
-            <Image src={EmailIcon} alt="Email Icon" />
+          <Link href="mailto:stano.malgorzata@gmail.com" target="_blank">
+            <Image src={EmailIcon} alt="Email Icon" className="h-12 w-10" />
           </Link>
         </div>
       </div>
