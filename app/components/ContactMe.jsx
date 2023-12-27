@@ -17,11 +17,12 @@ const ContactMe = () => {
           opportunities as a Junior Frontend Developer. Feel free to reach out!
         </p>
         <div className="socials flex flex-row gap-4">
-          <Link href="https://github.com/gosiast">
+          <Link href="https://github.com/gosiast" target="_blank">
             <Image src={GithubIcon} alt="GitHub Icon" className="w-12 h-12" />
           </Link>
           <Link
             href="https://www.linkedin.com/in/malgorzata-stano/"
+            target="_blank"
             className="h-12 w-12"
           >
             <Image src={LinkedIcon} alt="LinkedIn Icon" className="h-12 w-12" />
