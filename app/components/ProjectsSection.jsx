@@ -52,7 +52,10 @@ const projectsData = [
 const ProjectsSection = () => {
   return (
     <>
-      <h2 className="text-center text-3xl font-bold text-white mt-4 mb-5">
+      <h2
+        className="text-center text-3xl font-bold text-white mt-4 mb-5"
+        id="projects"
+      >
         My Projects
       </h2>
       <div className="grid md:grid-cols-2 gap-8 md:gap-12">

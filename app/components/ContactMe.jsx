@@ -7,8 +7,8 @@ import Image from "next/image";
 
 const ContactMe = () => {
   return (
-    <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative">
-      <div className="col-span-8 place-self-center text-left">
+    <section className="grid my-12 md:my-12 py-24 gap-4 relative" id="contact">
+      <div className="col-span-8 text-left">
         <h5 className="text-2xl font-bold text-white my-2">
           Let&apos;s Connect!
         </h5>
