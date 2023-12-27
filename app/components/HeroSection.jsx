@@ -8,10 +8,10 @@ import { TypeAnimation } from "react-type-animation";
 
 const HeroSection = () => {
   return (
-    <section className="lg:flex px-0 mb">
+    <section className="lg:flex px-0">
       <div className="display-block grid grid-cols-1 sm:grid-cols-12">
         <div className="col-span-8 place-self-center text-center sm:text-left">
-          <h1 className="text-white mb-8 text-4xl sm:text:5xl lg:text-5xl font-extrabold">
+          <h1 className="text-white mb-8 mt-10 text-4xl sm:text:5xl lg:text-5xl font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-br from-pink-700 via-purple-400 to-blue-400 hover:bg-slate-400">
               Hello, I&apos;m
             </span>
@@ -33,8 +33,10 @@ const HeroSection = () => {
               priority={true}
             />
             <br />
+            <br />
+            <hr />
           </h1>
-          <p className="text-[#ADB7BE] text-base sm:text-m lg:text-xl mb-8">
+          <p className="text-[#ADB7BE] text-base sm:text-m lg:text-xl mb-10">
             Welcome to my digital playground! I&apos;m on a journey to craft
             seamless and captivating web experiences. Dive in, explore my
             creations, and get to know the code that brings ideas to life.
