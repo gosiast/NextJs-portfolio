@@ -7,8 +7,12 @@ import Image from "next/image";
 
 const ContactMe = () => {
   return (
-    <section className="grid my-12 md:my-12 py-24 gap-4 relative" id="contact">
-      <div className="col-span-8 text-left">
+    <section
+      id="contact"
+      className="flex flex-col md:flex-row items-center md:gap-8 xl:gap-16 sm:py-16 xl:px-4"
+    >
+      {" "}
+      <div className="md:w-1/2 text-center md:text-left">
         <h5 className="text-2xl font-bold text-white my-2">
           Let&apos;s Connect!
         </h5>
@@ -16,7 +20,7 @@ const ContactMe = () => {
           I am currently looking for full-time remote (or hybrid from Barcelona)
           opportunities as a Junior Frontend Developer. Feel free to reach out!
         </p>
-        <div className="socials flex flex-row gap-4">
+        <div className="socials flex flex-row gap-4 justify-stretch">
           <Link href="https://github.com/gosiast" target="_blank">
             <Image src={GithubIcon} alt="GitHub Icon" className="w-12 h-12" />
           </Link>
@@ -32,7 +36,7 @@ const ContactMe = () => {
           </Link>
         </div>
       </div>
-      <div className="col-span-5 place-self-center mt-4 lg:mt-0">
+      <div className="mt-4 md:mt-0 text-center md:text-left">
         <div className="w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
           <Image
             src="/images/me_animation.png"
