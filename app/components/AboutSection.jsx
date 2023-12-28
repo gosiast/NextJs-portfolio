@@ -38,7 +38,7 @@ const TAB_DATA = [
             SheCodes Training Program 2021-2022
           </a>
         </li>
-        <li>MA Applied Linguistics, University of Warsaw, Poland 2016-2018</li>
+        <li>MA Applied Linguistics, University of Warsaw, Poland 20216-2018</li>
       </ul>
     ),
   },
