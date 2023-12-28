@@ -8,15 +8,15 @@ import MenuOverlay from "./MenuOverlay";
 const navLinks = [
   {
     title: "About",
-    path: "/#about",
+    path: "#about",
   },
   {
     title: "Projects",
-    path: "/#projects",
+    path: "#projects",
   },
   {
     title: "Contact",
-    path: "/#contact",
+    path: "#contact",
   },
 ];
 
@@ -39,7 +39,7 @@ const Navbar = () => {
             </button>
           ) : (
             <button
-              onClick={() => setNavbarOpen(false)}
+              onClick={() => setNavbarOpen(true)}
               className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
             >
               <XMarkIcon className="h-5 w-5" />
