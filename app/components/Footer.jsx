@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="footer border z-10 border-t-[#33353F] border-l-transparent border-r-transparent text-white">
+    <footer className="footer border z-10 border-t-[#33353F] border-l-transparent border-r-transparent text-white pt-0 pb-0">
       <div className="container p-10 flex justify-center">
         <p className="text-slate-600">
           This portfolio is an{" "}

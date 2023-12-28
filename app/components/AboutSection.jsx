@@ -10,11 +10,15 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-5">
         <li>
-          Frontend Technologies: HTML5, CSS3, ES6, JavaScript, Bootstrap,
-          Responsive Web Design
+          <strong>Frontend Technologies: </strong>HTML5, CSS3, ES6, JavaScript,
+          Bootstrap, Responsive Web Design
         </li>
-        <li>Frameworks and Libraries: ReactJs, NextJs</li>
-        <li>Version Control: Git, GitHub, GitLab</li>
+        <li>
+          <strong>Frameworks and Libraries:</strong> ReactJs, NextJs
+        </li>
+        <li>
+          <strong>Version Control:</strong> Git, GitHub, GitLab
+        </li>
         <li>Responsive Web Design</li>
         <li>Development Tools: ESLint</li>
       </ul>
@@ -31,10 +35,10 @@ const TAB_DATA = [
             target="_blank"
             className="website link to the shecodes platform hover:underline-offset-1"
           >
-            SheCodes Training Program
+            SheCodes Training Program 2021-2022
           </a>
         </li>
-        <li>MA Applied Linguistics, University of Warsaw, Poland</li>
+        <li>MA Applied Linguistics, University of Warsaw, Poland 2016-2018</li>
       </ul>
     ),
   },
