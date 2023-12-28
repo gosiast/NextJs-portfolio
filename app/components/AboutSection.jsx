@@ -132,7 +132,7 @@ const AboutSection = () => {
           height={600}
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-center text-white font-bold mb-4 mt-2 text-2xl sm:text:5xl lg:text-3xl">
+          <h2 className="text-center text-white font-bold mb-5 mt-3 text-3xl sm:text:5xl lg:text-3xl">
             About Me
           </h2>
           <p className="text-[#ADB7BE] text-justify md:text-lg mb-6">
