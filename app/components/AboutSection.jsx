@@ -142,9 +142,9 @@ const AboutSection = () => {
             Spain has become my home. Since 2019 I&apos;ve been working as an
             English Teacher. In <strong>2021</strong> I&apos;ve decided to shift
             my career and I fell in love with coding. It&apos;s fascinating,
-            challenging but incredibly rewarding. I would like to continue to
-            grow as a Frontend Developer and learn more about the IT sector. I
-            live by the{" "}
+            challenging but incredibly rewarding. I completed several courses,
+            worked on some projects. I would like to continue to grow as a
+            Frontend Developer and learn more about the IT sector. I live by the{" "}
             <strong className="text-pink-400">“World Is Your Oyster”</strong>{" "}
             phrase and I strongly believe that we should take the opportunities
             that are waiting for us in the world.
