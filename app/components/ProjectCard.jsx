@@ -3,7 +3,7 @@ import { CodeBracketIcon, GlobeAltIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
 //a few props: imgUrl, title,
-// className overlay is when we hover the button
+// className 'overlay' is when we hover the button
 // when i forgot relative group in the parent element, the hover didn't work
 const ProjectCard = ({ imgUrl, title, description, githubUrl, websiteUrl }) => {
   return (
