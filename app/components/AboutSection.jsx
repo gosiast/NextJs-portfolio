@@ -138,10 +138,10 @@ const AboutSection = () => {
           <p className="text-[#ADB7BE] text-justify md:text-lg mb-6">
             Hey, it&apos;s <strong>Małgorzata</strong> here, but call me{" "}
             <strong className="text-pink-400">Gosia</strong>. I&apos;m Polish
-            but I&apos;ve been living abroad over the past years. Currently,
+            but I&apos;ve been living abroad for the past years. Currently,
             Spain has become my home. Since 2019 I&apos;ve been working as an
-            English Teacher. In <strong>2021</strong> I&apos;ve decided to shift
-            my career and I fell in love with coding. It&apos;s fascinating,
+            English Teacher. In <strong>2021</strong> I decided to shift my
+            career and I fell in love with coding. It&apos;s fascinating,
             challenging but incredibly rewarding. I completed several courses,
             worked on some projects. I would like to continue to grow as a
             Frontend Developer and learn more about the IT sector. I live by the{" "}
