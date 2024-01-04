@@ -126,10 +126,11 @@ const AboutSection = () => {
     <section className="text-white mt-2 mb-5" id="about">
       <div className="display-block md:grid md:grid-cols-2 gap-8 items-center xl:gap-4 sm:py-16 xl:px-4 w-full">
         <Image
-          src="/images/oyster_image.png"
+          src="/images/aboutme_photo.png"
           alt="image of an oyster with the world instead of the pearl"
-          width={500}
-          height={600}
+          width={400}
+          height={400}
+          className="text-center"
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-center text-white font-bold mb-5 mt-3 text-3xl sm:text:5xl lg:text-3xl">
@@ -138,7 +139,7 @@ const AboutSection = () => {
           <p className="text-[#ADB7BE] text-justify md:text-lg mb-6">
             Hey, it&apos;s <strong>Małgorzata</strong> here, but call me{" "}
             <strong className="text-pink-400">Gosia</strong>. I&apos;m Polish
-            but I&apos;ve been living abroad for the past years. Currently,
+            but I&apos;ve been living abroad for the few past years. Currently,
             Spain has become my home. Since 2019 I&apos;ve been working as an
             English Teacher. In <strong>2021</strong> I decided to shift my
             career and I fell in love with coding. It&apos;s fascinating,
