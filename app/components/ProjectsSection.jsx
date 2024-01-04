@@ -4,6 +4,15 @@ import ProjectCard from "./ProjectCard";
 const projectsData = [
   {
     id: 1,
+    title: "Frontend Developer",
+    description:
+      "8Billionminds is building a new free education system for the world via a live-learning platform. Teach, share, and learn any subject from anyone, anywhere. All via real-time live lessons - the best way to learn! Think Couchsurfing for education.",
+    image: "/images/projects/8billionminds.png",
+    githubUrl: "https://www.8billionminds.com/",
+    websiteUrl: "https://www.8billionminds.com/",
+  },
+  {
+    id: 2,
     title: "React Weather App",
     description:
       "Built with React, advanced HTML, CSS, Javascript and Boostrap. Using real data and API. Final project of the SheCodes React course",
@@ -12,7 +21,7 @@ const projectsData = [
     websiteUrl: "https://my-first-react-dictionary-ms.netlify.app/",
   },
   {
-    id: 2,
+    id: 3,
     title: "React Dictionary App",
     description:
       "Built with React, advanced HTML, CSS, Javascript and Boostrap. Using real data and API. Final project of the SheCodes React course",
@@ -21,7 +30,7 @@ const projectsData = [
     websiteUrl: "https://final-weather-app-react.netlify.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Weather App",
     description:
       "Built with advanced HTML, CSS, Javascript and Boostrap. Using real data and API. Final project of the SheCodes Plus course",
@@ -30,7 +39,7 @@ const projectsData = [
     websiteUrl: "https://sad-darwin-5ac17f.netlify.app/",
   },
   {
-    id: 4,
+    id: 5,
     title: "First Portfolio",
     description:
       "My First Portfolio build with HTMl and CSS. In this project I learnt how to build responsive websites. Final project of the SheCodes Responsive course",
@@ -39,7 +48,7 @@ const projectsData = [
     websiteUrl: "https://malgorzatastanoportfolio.netlify.app/",
   },
   {
-    id: 5,
+    id: 6,
     title: "Frontend Mentor",
     description:
       "Look at some more projects of mine on Frontend Mentor where I contribute to an open source and practice my skills.",
