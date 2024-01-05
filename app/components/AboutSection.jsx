@@ -130,7 +130,6 @@ const AboutSection = () => {
           alt="image of an oyster with the world instead of the pearl"
           width={400}
           height={400}
-          className="text-center"
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-center text-white font-bold mb-5 mt-3 text-3xl sm:text:5xl lg:text-3xl">
@@ -149,6 +148,18 @@ const AboutSection = () => {
             <strong className="text-pink-400">“World Is Your Oyster”</strong>{" "}
             phrase and I strongly believe that we should take the opportunities
             that are waiting for us in the world.
+            <br />
+            We learn well by observing others, but also with others. Check out
+            my Instagram channel{" "}
+            <strong className="text-pink-400">
+              <a
+                href="https://www.instagram.com/cheers2errors/"
+                target="_blank"
+              >
+                Cheers2errors
+              </a>{" "}
+            </strong>
+            where I share my journey as Frontend Developer.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
