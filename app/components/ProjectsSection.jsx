@@ -17,8 +17,8 @@ const projectsData = [
     description:
       "Built with React, advanced HTML, CSS, Javascript and Boostrap. Using real data and API. Final project of the SheCodes React course",
     image: "/images/projects/react_weather_app.png",
-    githubUrl: "https://github.com/gosiast/react-dictionary-app",
-    websiteUrl: "https://my-first-react-dictionary-ms.netlify.app/",
+    githubUrl: "https://github.com/gosiast/final-weather-app",
+    websiteUrl: "https://final-weather-app-react.netlify.app/",
   },
   {
     id: 3,
