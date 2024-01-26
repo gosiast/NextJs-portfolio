@@ -10,17 +10,25 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-5">
         <li>
-          <strong>Frontend Technologies: </strong>HTML5, CSS3, ES6, JavaScript,
-          Bootstrap, Responsive Web Design
+          <strong className="text-pink-400">Frontend Technologies: </strong>
+          HTML5, CSS3, ES6, JavaScript, Bootstrap, Tailwind, Responsive Web
+          Design
         </li>
         <li>
-          <strong>Frameworks and Libraries:</strong> ReactJs, NextJs
+          <strong className="text-pink-400">Frameworks and Libraries:</strong>{" "}
+          ReactJs, NextJs
         </li>
         <li>
-          <strong>Version Control:</strong> Git, GitHub, GitLab
+          <strong className="text-pink-400">CSS Preprocessors:</strong> SASS
         </li>
-        <li>Responsive Web Design</li>
-        <li>Development Tools: ESLint</li>
+        <li>
+          <strong className="text-pink-400">Version Control:</strong> Git,
+          GitHub, GitLab
+        </li>
+        <li>
+          <strong className="text-pink-400">Development Tools:</strong> Browser
+          Developer Tools, ESLint
+        </li>
       </ul>
     ),
   },
@@ -33,12 +41,21 @@ const TAB_DATA = [
           <a
             href="https://www.shecodes.io/"
             target="_blank"
-            className="website link to the shecodes platform hover:underline-offset-1"
+            className="hover:text-pink-400 
+    hover:duration-300 hover:undeline"
           >
             SheCodes Training Program 2021-2022
           </a>
         </li>
         <li>MA Applied Linguistics, University of Warsaw, Poland 2016-2018</li>
+        <li>
+          Lingue e Letterature Straniere , Università degli Studi di Bari, Italy
+          2017-2018
+        </li>
+        <li>
+          Scienze Politiche, Università degli Studi di Milano, Italy 2015-2016
+        </li>
+        <li>BA European Studies, University of Warsaw, Poland 2012-2015</li>
       </ul>
     ),
   },
@@ -145,21 +162,22 @@ const AboutSection = () => {
             About Me
           </h2>
           <p className="text-[#ADB7BE] text-justify md:text-lg mb-6">
-            Hey, it&apos;s <strong>Małgorzata</strong> here, but call me{" "}
-            <strong className="text-pink-400">Gosia</strong>. I&apos;m Polish
-            but I&apos;ve been living abroad for the few past years. Currently,
-            Spain has become my home. Since 2019 I&apos;ve been working as an
-            English Teacher. In <strong>2021</strong> I decided to shift my
-            career and I fell in love with coding. It&apos;s fascinating,
-            challenging but incredibly rewarding. I completed several courses,
-            worked on some projects. I would like to continue to grow as a
-            Frontend Developer and learn more about the IT sector. I live by the{" "}
-            <strong className="text-pink-400">“World Is Your Oyster”</strong>{" "}
+            Hey, it&apos;s <strong className="text-white">Małgorzata</strong>{" "}
+            here, but call me <strong className="text-pink-400">Gosia</strong>.
+            I&apos;m Polish but I&apos;ve been living abroad most of my time
+            since 2018. Currently, Spain 🇪🇸 became my home. Since 2019 I&apos;ve
+            been working as an English Teacher. In <strong>2021</strong> I
+            decided to shift my career and I fell in love with coding. It&apos;s
+            fascinating, challenging but incredibly rewarding. I completed
+            several courses, worked on some projects. I would like to continue
+            to grow as a Frontend Developer and learn more about the IT sector.
+            I live by the
+            <strong className="text-pink-400">
+              “World Is Your Oyster”
+            </strong>{" "}
             phrase and I strongly believe that we should take the opportunities
-            that are waiting for us in the world.
-            <br />
-            We learn well by observing others, but also with others. Check out
-            my Instagram channel{" "}
+            that are waiting for us in the world. We learn well by observing
+            others, but also with others. Check out my Instagram channel{" "}
             <strong className="text-pink-400">
               <a
                 href="https://www.instagram.com/cheers2errors/"
