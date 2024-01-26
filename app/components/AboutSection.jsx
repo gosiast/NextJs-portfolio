@@ -49,10 +49,19 @@ const TAB_DATA = [
       <ul className="list-disc pl-5">
         <li>
           <a
+            href="/certificates/TailwindUdemyCertificate.pdf"
+            target="_blank"
+            className="hover:text-pink-400 hover:duration-300 hover:undeline"
+          >
+            Tailwind CSS - Zero to Hero - Tailwind v3 2023{" "}
+          </a>
+          - Udemy 01/2024{" "}
+        </li>
+        <li>
+          <a
             href="/certificates/malgorzata_stano_ certificate_learn_command_line.pdf"
             target="_blank"
-            className="hover:text-pink-400 
-    hover:duration-300 hover:undeline"
+            className="hover:text-pink-400 hover:duration-300 hover:undeline"
           >
             Learn the Command Line
           </a>
