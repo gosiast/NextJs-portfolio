@@ -165,19 +165,20 @@ const AboutSection = () => {
             Hey, it&apos;s <strong className="text-white">Małgorzata</strong>{" "}
             here, but call me <strong className="text-pink-400">Gosia</strong>.
             I&apos;m Polish but I&apos;ve been living abroad most of my time
-            since 2018. Currently, Spain 🇪🇸 became my home. Since 2019 I&apos;ve
-            been working as an English Teacher. In <strong>2021</strong> I
-            decided to shift my career and I fell in love with coding. It&apos;s
-            fascinating, challenging but incredibly rewarding. I completed
-            several courses, worked on some projects. I would like to continue
-            to grow as a Frontend Developer and learn more about the IT sector.
-            I live by the
+            since 2017. Currently, Spain 🇪🇸 is my home. Since 2019 I&apos;ve
+            been working as an English Teacher. In{" "}
+            <strong className="text-white">2022</strong> I decided to shift my
+            career and I fell in love with coding. It&apos;s fascinating,
+            challenging but incredibly rewarding. I completed several courses,
+            worked on some projects. I would like to continue to grow as a
+            Frontend Developer and learn more about the IT sector. I live by the
+            phrase
             <strong className="text-pink-400">
               “World Is Your Oyster”
             </strong>{" "}
-            phrase and I strongly believe that we should take the opportunities
-            that are waiting for us in the world. We learn well by observing
-            others, but also with others. Check out my Instagram channel{" "}
+            and I strongly believe that we should seize the opportunities
+            waiting for us in the world. We learn well by observing others, but
+            also with others. Check out my Instagram channel{" "}
             <strong className="text-pink-400">
               <a
                 href="https://www.instagram.com/cheers2errors/"
