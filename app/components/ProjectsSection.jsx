@@ -31,24 +31,6 @@ const projectsData = [
   },
   {
     id: 4,
-    title: "Weather App",
-    description:
-      "Built with advanced HTML, CSS, Javascript and Boostrap. Using real data and API. Final project of the SheCodes Plus course",
-    image: "/images/projects/weather_app_photo.png",
-    githubUrl: "https://github.com/gosiast/vanilla-weather-app/tree/main",
-    websiteUrl: "https://sad-darwin-5ac17f.netlify.app/",
-  },
-  {
-    id: 5,
-    title: "First Portfolio",
-    description:
-      "My First Portfolio build with HTMl and CSS. In this project I learnt how to build responsive websites. Final project of the SheCodes Responsive course",
-    image: "/images/projects/first_portfolio.png",
-    githubUrl: "https://github.com/gosiast/my-portfolio/tree/main",
-    websiteUrl: "https://malgorzatastanoportfolio.netlify.app/",
-  },
-  {
-    id: 6,
     title: "Frontend Mentor",
     description:
       "Look at some more projects of mine on Frontend Mentor where I contribute to an open source and practice my skills.",
