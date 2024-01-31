@@ -164,9 +164,9 @@ const AboutSection = () => {
           <p className="text-[#ADB7BE] text-justify md:text-lg mb-6">
             Hey, it&apos;s <strong className="text-white">Małgorzata</strong>{" "}
             here, but call me <strong className="text-pink-400">Gosia</strong>.
-            I&apos;m Polish but I&apos;ve been living abroad most of my time
-            since 2017. Currently, Spain 🇪🇸 is my home. Since 2019 I&apos;ve
-            been working as an English Teacher. In{" "}
+            Born & raised in Poland, living abroad most of my time since 2017.
+            Currently, Barcelona is my harbour. Since 2019 I&apos;ve been
+            working as an English Teacher. In{" "}
             <strong className="text-white">2022</strong> I decided to shift my
             career and I fell in love with coding. It&apos;s fascinating,
             challenging but incredibly rewarding. I completed several courses,
