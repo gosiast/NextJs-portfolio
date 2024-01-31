@@ -172,13 +172,11 @@ const AboutSection = () => {
             challenging but incredibly rewarding. I completed several courses,
             worked on some projects. I would like to continue to grow as a
             Frontend Developer and learn more about the IT sector. I live by the
-            phrase
-            <strong className="text-pink-400">
-              “World Is Your Oyster”
-            </strong>{" "}
+            phrase{" "}
+            <strong className="text-pink-400">“World Is Your Oyster”</strong>{" "}
             and I strongly believe that we should seize the opportunities
             waiting for us in the world. We learn well by observing others, but
-            also with others. Check out my Instagram channel{" "}
+            also with others - check out my Instagram channel{" "}
             <strong className="text-pink-400">
               <a
                 href="https://www.instagram.com/cheers2errors/"
