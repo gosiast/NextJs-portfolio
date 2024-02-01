@@ -164,7 +164,8 @@ const AboutSection = () => {
           <p className="text-[#ADB7BE] text-justify md:text-lg mb-6">
             Hey, it&apos;s <strong className="text-white">Małgorzata</strong>{" "}
             here, but call me <strong className="text-pink-400">Gosia</strong>.
-            Born & raised in Poland, living abroad most of my time since 2017.
+            Born & raised in Poland, living abroad most of my time since 2017. I
+            speak 4 languages & love to learn about different cultures.
             Currently, Barcelona is my harbour. Since 2019 I&apos;ve been
             working as an English Teacher. In{" "}
             <strong className="text-white">2022</strong> I decided to shift my
@@ -185,7 +186,8 @@ const AboutSection = () => {
                 Cheers2errors
               </a>{" "}
             </strong>
-            where I share my journey as Frontend Developer.
+            where I share my journey as{" "}
+            <strong ClassName="text-white">Frontend Developer</strong>.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
