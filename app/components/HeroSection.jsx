@@ -50,8 +50,8 @@ const HeroSection = () => {
             <button className="px-7 py-4 w-full sm:w-fit rounded-full mr-5 bg-transparent from-pink-700 via-purple-400 to-blue-400 hover:bg-slate-200 text-white hover:text-black border mb-3">
               <span>
                 <a
-                  href="/Malgorzata_Stano_Resume_2024.pdf"
-                  download="Malgorzata_Stano_Resume.pdf"
+                  href="/Malgorzata Stano_Frontend_Developer.pdf"
+                  download="/Malgorzata Stano_Frontend_Developer.pdf"
                   target="_blank"
                 >
                   Download CV
