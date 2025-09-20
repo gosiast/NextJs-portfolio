@@ -76,7 +76,7 @@ const TAB_DATA = [
           <a
             href="https://www.linkedin.com/learning/certificates/f441ea9a0b28e99aaf0564e8bc8a2ca3c2c710dd98380c920382385d14c3e669?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BmY36m3WlQ5GeEFVvEyJxzg%3D%3D"
             target="_blank"
-            className="hover:text-pink-400 hover:duration-300 hover:underline"
+            className="text-pink-400 hover:duration-300 hover:underline"
           >
             Agile Foundations
           </a>{" "}
@@ -86,7 +86,7 @@ const TAB_DATA = [
           <a
             href="https://www.codecademy.com/profiles/malgorzata_stano/certificates/1790781f3857d258b06a24f3c53424cd"
             target="_blank"
-            className="hover:text-pink-400 hover:duration-300 hover:underline"
+            className="text-pink-400 hover:duration-300 hover:underline"
           >
             Learn React Testing Course
           </a>{" "}
@@ -96,7 +96,7 @@ const TAB_DATA = [
           <a
             href="https://charteredcertifications.com/learning/certificate/99006840"
             target="_blank"
-            className="hover:text-pink-400 hover:duration-300 hover:underline"
+            className="text-pink-400 hover:duration-300 hover:underline"
           >
             Certified Compliance Professional in Cryptocurrency Financial Crimes
             (CCPC™)
@@ -107,7 +107,7 @@ const TAB_DATA = [
           <a
             href="https://www.linkedin.com/learning/certificates/6b527ec0654b063affbc4947db1be19a47789e9a8d81c9989b289b3f4c18c625?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B2D0D83ZvScOAj7TnAHbTMA%3D%3D"
             target="_blank"
-            className="hover:text-pink-400 hover:duration-300 hover:underline"
+            className="text-pink-400 hover:duration-300 hover:underline"
           >
             Tech Career Skills: Communication for Developers
           </a>{" "}
@@ -117,7 +117,7 @@ const TAB_DATA = [
           <a
             href="https://www.linkedin.com/learning/certificates/ceb00ee84696201dee9c88afae736ebdda7327efe45f1446d0a52582ff13645e?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B2D0D83ZvScOAj7TnAHbTMA%3D%3D"
             target="_blank"
-            className="hover:text-pink-400 hover:duration-300 hover:underline"
+            className="text-pink-400 hover:duration-300 hover:underline"
           >
             How Blockchains Will Change Business
           </a>{" "}
@@ -127,7 +127,7 @@ const TAB_DATA = [
           <a
             href="https://www.linkedin.com/learning/certificates/7ff67c488a34d603006884d7dd6db364d1b09c9b0ce240ee667c324c13702695?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B2D0D83ZvScOAj7TnAHbTMA%3D%3D"
             target="_blank"
-            className="hover:text-pink-400 hover:duration-300 hover:underline"
+            className="text-pink-400 hover:duration-300 hover:underline"
           >
             Top 10 Skills for Blockchain Developers
           </a>{" "}
@@ -137,7 +137,7 @@ const TAB_DATA = [
           <a
             href="https://www.linkedin.com/learning/certificates/2eef26fe9ac4db1c701209c2bf88f4a880c604dbac886ec8f8442b149ef5ddae?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B2D0D83ZvScOAj7TnAHbTMA%3D%3D"
             target="_blank"
-            className="hover:text-pink-400 hover:duration-300 hover:underline"
+            className="text-pink-400 hover:duration-300 hover:underline"
           >
             JavaScript: Async
           </a>{" "}
@@ -147,7 +147,7 @@ const TAB_DATA = [
           <a
             href="https://www.linkedin.com/learning/certificates/a473dcbbab94eb5188471a7caab824bf99b988906ac19f3fca8cf452cf6319c6?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B2D0D83ZvScOAj7TnAHbTMA%3D%3D"
             target="_blank"
-            className="hover:text-pink-400 hover:duration-300 hover:underline"
+            className="text-pink-400 hover:duration-300 hover:underline"
           >
             Cultivating Ambition to Reach Your Career Goals
           </a>{" "}
@@ -157,7 +157,7 @@ const TAB_DATA = [
           <a
             href="https://www.linkedin.com/learning/certificates/0302f3a4133f5d71918a3f35e533f2fe1d434586ecc034a63b3f968f0cf9091d?trk=share_certificate&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B2D0D83ZvScOAj7TnAHbTMA%3D%3D"
             target="_blank"
-            className="hover:text-pink-400 hover:duration-300 hover:underline"
+            className="text-pink-400 hover:duration-300 hover:underline"
           >
             How to Create a Career You Love
           </a>{" "}
@@ -167,7 +167,7 @@ const TAB_DATA = [
           <a
             href="/certificates/TailwindUdemyCertificate.pdf"
             target="_blank"
-            className="hover:text-pink-400 hover:duration-300 hover:undeline"
+            className="text-pink-400 hover:duration-300 hover:undeline"
           >
             Tailwind CSS - Zero to Hero - Tailwind v3 2023{" "}
           </a>
@@ -205,19 +205,16 @@ const AboutSection = () => {
             About Me
           </h2>
           <p className="text-[#ADB7BE] text-justify md:text-lg mb-6">
-            Hey, it's <strong className="text-white">Małgorzata</strong>, but
-            everyone calls me
-            <strong className="text-pink-400"> Gosia</strong>. Born and raised
-            in Poland, I’ve been thriving in multicultural environments since
-            2017 and speak five languages fluently. In{" "}
+            Born and raised in Poland, I’ve been thriving in multicultural
+            environments since 2017 and speak five languages fluently. In{" "}
             <strong className="text-white">2022</strong>, I made the leap from
             teaching English to coding — and never looked back.
           </p>
 
           <p className="text-[#ADB7BE] text-justify md:text-lg mb-6">
             At <strong className="text-white">Decubate</strong>, I designed and
-            implemented the
-            <strong className="text-pink-400"> Compliance Hub</strong> — a tool
+            implemented the{" "}
+            <strong className="text-pink-400">Compliance Hub</strong> — a tool
             that helps compliance officers review users, monitor risks, and
             enforce policies with transparency. This system was a key factor in
             Decubate becoming the first crypto launchpad licensed under{" "}

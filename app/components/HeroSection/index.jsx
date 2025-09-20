@@ -36,8 +36,9 @@ const HeroSection = () => {
             <br />
             <hr />
           </h1>
-          <p className="text-[#ADB7BE] text-base sm:text-m lg:text-xl mb-10 text-justify">
-            Hi, I&apos;m <strong className="text-pink-400">Gosia</strong>,
+          <p className="text-[#ADB7BE] text-justify md:text-lg mb-6">
+            Hi, I&apos;m <strong className="text-pink-400 mr-1">Gosia</strong>
+            (short for <strong className="text-white">Małgorzata</strong>),
             former English teacher turned{" "}
             <strong className="text-white">Frontend Developer</strong>, I’ve
             been living and working across six countries and now call
