@@ -162,33 +162,35 @@ const AboutSection = () => {
             About Me
           </h2>
           <p className="text-[#ADB7BE] text-justify md:text-lg mb-6">
-            Hey, it&apos;s <strong className="text-white">Małgorzata</strong>{" "}
-            here, but call me <strong className="text-pink-400">Gosia</strong>.
-            Born & raised in Poland, living abroad most of my time since 2017. I
-            speak 4 languages & love to learn about different cultures.
-            Currently, Barcelona is my harbour. Since 2019 I&apos;ve been
-            working as an English Teacher. In{" "}
-            <strong className="text-white">2022</strong> I decided to shift my
-            career and I fell in love with coding. It&apos;s fascinating,
-            challenging but incredibly rewarding. I completed several courses,
-            worked on some projects. I would like to continue to grow as a
-            Frontend Developer and learn more about the IT sector. I live by the
-            phrase{" "}
-            <strong className="text-pink-400">“World Is Your Oyster”</strong>{" "}
-            and I strongly believe that we should seize the opportunities
-            waiting for us in the world. We learn well by observing others, but
-            also with others - check out my Instagram channel{" "}
+            Hey, it&apos;s <strong className="text-white">Małgorzata</strong>,
+            but call me <strong className="text-pink-400">Gosia</strong>. Born
+            and raised in Poland, I&apos;ve been living abroad since 2017 and
+            currently call Barcelona home. I speak five languages and thrive in
+            multicultural environments. In{" "}
+            <strong className="text-white">2022</strong>, I made the leap from
+            teaching English to coding — and quickly discovered my passion for
+            frontend development. Since then, I&apos;ve worked on projects that
+            combine <strong className="text-white">React</strong>,{" "}
+            <strong className="text-white">Next.js</strong>,{" "}
+            <strong className="text-white">TypeScript</strong>, and{" "}
+            <strong className="text-white">GraphQL</strong> to build scalable
+            and user-friendly web applications. At Decubate, I helped design and
+            implement the{" "}
+            <strong className="text-pink-400">Compliance Hub</strong> — a
+            platform that enables compliance officers to review users, monitor
+            risks, and enforce policy actions with full transparency. This
+            system was a key factor in Decubate becoming the first crypto
+            launchpad licensed under{" "}
+            <strong className="text-pink-400">MiCAR</strong> (Markets in
+            Crypto-Assets Regulation), the EU’s new regulatory framework for
+            digital assets. I live by the phrase{" "}
             <strong className="text-pink-400">
-              <a
-                href="https://www.instagram.com/cheers2errors/"
-                target="_blank"
-              >
-                Cheers2errors
-              </a>{" "}
-            </strong>
-            where I share my journey as{" "}
-            <strong ClassName="text-white">Frontend Developer</strong>.
+              “The world is your oyster”
+            </strong>{" "}
+            and approach every challenge as an opportunity to grow, learn, and
+            build meaningful solutions.
           </p>
+
           <div className="flex flex-row justify-start mt-8">
             <TabButton
               selectTab={() => handleTabChange("skills")}
