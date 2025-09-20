@@ -37,26 +37,39 @@ const HeroSection = () => {
             <hr />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-m lg:text-xl mb-10 text-justify">
-            Welcome to my digital playground! I&apos;m on a journey to craft
-            seamless and captivating web experiences. Dive in, explore my
-            creations, and get to know the code that brings ideas to life 💡
+            Hi, I&apos;m <strong className="text-pink-400">Gosia</strong>,
+            former English teacher turned{" "}
+            <strong className="text-white">Frontend Developer</strong>, I’ve
+            been living and working across six countries and now call
+            <strong className="text-white"> Barcelona</strong> home. I love
+            building sleek, functional web applications with React, Next.js, and
+            TypeScript — mixing creativity, problem-solving, and a pinch of
+            curiosity ✨
           </p>
           <div>
-            <button className="px-7 py-4 w-full sm:w-fit rounded-full mr-5 bg-gradient-to-br from-pink-700 via-purple-400 to-blue-400 hover:bg-slate-400 text-white hover:text-black mb-3">
-              <a href="/#contact" className="href">
-                Contact Me
-              </a>
+            <button
+              className="px-7 py-4 w-full sm:w-fit rounded-lg mr-5 
+  bg-gradient-to-br from-pink-700 via-purple-400 to-blue-400 
+  text-white font-medium mb-3
+  transition-all duration-300 ease-in-out
+  hover:scale-105 hover:brightness-110"
+            >
+              <a href="/#contact">Contact Me</a>
             </button>
-            <button className="px-7 py-4 w-full sm:w-fit rounded-full mr-5 bg-transparent from-pink-700 via-purple-400 to-blue-400 hover:bg-slate-200 text-white hover:text-black border mb-3">
-              <span>
-                <a
-                  href="/Malgorzata Stano_Frontend_Developer.pdf"
-                  download="/Malgorzata Stano_Frontend_Developer.pdf"
-                  target="_blank"
-                >
-                  Download CV
-                </a>
-              </span>
+
+            <button
+              className="px-7 py-4 w-full sm:w-fit rounded-lg mr-5 
+bg-transparent from-pink-700 via-purple-400 to-blue-400  text-white border mb-3  
+  transition-all duration-300 ease-in-out
+  hover:scale-105 "
+            >
+              <a
+                href="/Malgorzata Stano_Frontend_Developer.pdf"
+                download="/Malgorzata Stano_Frontend_Developer.pdf"
+                target="_blank"
+              >
+                Download CV
+              </a>
             </button>
           </div>
         </div>

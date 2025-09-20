@@ -1,7 +1,4 @@
 import React from "react";
-import GithubIcon from "../../public/images/githubIcon.svg";
-import LinkedIcon from "../../public/images/linkedinIcon.svg";
-import EmailIcon from "../../public/images/emailIcon.svg";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -17,22 +14,39 @@ const ContactMe = () => {
           Let&apos;s Connect!
         </h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md text-justify md:text-lg">
-          I am currently looking for full-time remote (or hybrid from Barcelona)
-          opportunities as a Junior Frontend Developer. Feel free to reach out!
+          I am currently looking for full-time remote opportunities as a
+          Frontend Developer. Feel free to reach out!
         </p>
         <div className="socials flex flex-row gap-4 justify-stretch">
           <Link href="https://github.com/gosiast" target="_blank">
-            <Image src={GithubIcon} alt="GitHub Icon" className="w-12 h-12" />
+            <Image
+              src="/images/githubIcon.svg"
+              alt="GitHub Icon"
+              className="transition-transform duration-300 hover:scale-110 hover:brightness-125 cursor-pointer"
+              width={48}
+              height={48}
+            />
           </Link>
           <Link
             href="https://www.linkedin.com/in/malgorzata-stano/"
             target="_blank"
-            className="h-12 w-12"
           >
-            <Image src={LinkedIcon} alt="LinkedIn Icon" className="h-12 w-12" />
+            <Image
+              src="/images/linkedinIcon.svg"
+              alt="LinkedIn Icon"
+              className="transition-transform duration-300 hover:scale-110 hover:brightness-125 cursor-pointer"
+              width={48}
+              height={48}
+            />
           </Link>
           <Link href="mailto:stano.malgorzata@gmail.com" target="_blank">
-            <Image src={EmailIcon} alt="Email Icon" className="h-12 w-10" />
+            <Image
+              src="/images/EmailIcon.svg"
+              alt="Email Icon"
+              className="transition-transform duration-300 hover:scale-110 hover:brightness-125 cursor-pointer"
+              width={48}
+              height={48}
+            />
           </Link>
         </div>
       </div>

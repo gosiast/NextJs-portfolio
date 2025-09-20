@@ -23,7 +23,6 @@ const Footer = () => {
           >
             Małgorzata Stano
           </a>
-          .{" "}
         </p>
       </div>
     </footer>
