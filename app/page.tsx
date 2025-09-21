@@ -1,3 +1,4 @@
+// app/page.tsx
 import AboutSection from "./components/AboutMe";
 import ContactMe from "./components/ContactMe";
 import Footer from "./components/Footer";
@@ -5,8 +6,9 @@ import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import ProjectsSection from "./components/ProjectsSection";
 import TedTalk from "./components/TedTalk";
+import React from "react";
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
     <main className="flex min-h-screen flex-col bg-[#121212]">
       <Navbar />
@@ -20,4 +22,6 @@ export default function Home() {
       </div>
     </main>
   );
-}
+};
+
+export default Home;
