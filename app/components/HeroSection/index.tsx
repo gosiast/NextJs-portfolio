@@ -49,7 +49,7 @@ const HeroSection = () => {
               <a href="/#contact">Contact Me</a>
             </button>
 
-            <button className="px-7 py-4 rounded-lg mr-5 bg-transparent border border-pink-400 text-white font-medium mb-3 transition-all duration-300 ease-in-out hover:scale-105">
+            <button className="px-7 py-4 w-full sm:w-fit rounded-lg mr-5 bg-transparent border border-pink-400 text-white font-medium mb-3 transition-all duration-300 ease-in-out hover:scale-105">
               <a
                 href="/Malgorzata Stano_Frontend_Developer.pdf"
                 download="/Malgorzata Stano_Frontend_Developer.pdf"
