@@ -28,7 +28,7 @@ const Testimonials: React.FC = () => {
             >
               {testimonials[index].author}
             </a>
-            <span className="text-gray-500 text-xs sm:text-sm italic">
+            <span className="text-gray-500 text-xs italic">
               {testimonials[index].date}
             </span>
           </div>
