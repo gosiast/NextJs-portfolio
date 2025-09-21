@@ -19,6 +19,10 @@ const navLinks = [
     path: "/#tedtalk",
   },
   {
+    title: "inspiration",
+    path: "/#inspiration",
+  },
+  {
     title: "Contact",
     path: "/#contact",
   },

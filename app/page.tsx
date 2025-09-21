@@ -1,10 +1,10 @@
-// app/page.tsx
 import AboutSection from "./components/AboutMe";
 import ContactMe from "./components/ContactMe";
 import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import ProjectsSection from "./components/ProjectsSection";
+import QuoteOfTheDay from "./components/QuoteOfTheDay";
 import TedTalk from "./components/TedTalk";
 import React from "react";
 
@@ -18,6 +18,7 @@ const Home: React.FC = () => {
         <ProjectsSection />
         <TedTalk />
         <ContactMe />
+        <QuoteOfTheDay />
         <Footer />
       </div>
     </main>
