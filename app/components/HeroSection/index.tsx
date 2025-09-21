@@ -27,14 +27,8 @@ const HeroSection = () => {
               ]}
               wrapper="span"
               speed={50}
-              width={500}
-              height={500}
               repeat={Infinity}
-              priority={true}
             />
-            <br />
-            <br />
-            <hr />
           </h1>
           <p className="text-[#ADB7BE] text-justify md:text-lg mb-6">
             Hi, I&apos;m <strong className="text-pink-400 mr-1">Gosia</strong>

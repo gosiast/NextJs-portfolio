@@ -8,11 +8,21 @@ const TedTalk = () => {
         Persistence in Action
       </h2>
       <p className="text-[#ADB7BE] text-center md:text-lg mb-6 max-w-2xl mx-auto leading-relaxed">
-        In 2023, I gave a TED-style talk through WaveMakers.io about
+        In 2023, I gave a TED-style talk through{" "}
+        <a
+          href="https://www.linkedin.com/company/wavemakers-io/posts/?feedView=all"
+          className="text-pink-400"
+        >
+          WaveMakers.io
+        </a>{" "}
+        personal development program about
         <span className="text-pink-400"> perseverance</span>. The message was
-        simple: <strong className="text-white">keep going</strong>. Persistence
-        carried me from teaching to tech, and it continues to guide me as a
-        Frontend Developer today.
+        simple:
+        <strong className="text-white"> keep going</strong>. For me, that
+        mindset isn’t just personal - it’s how I approach code. Debugging,
+        learning new frameworks, it all requires resilience and curiosity.
+        Sharing this talk was a way to show that persistence shapes not only my
+        story, but also the way I grow as a developer.
       </p>
 
       <div className="flex justify-center">
