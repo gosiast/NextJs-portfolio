@@ -1,39 +1,33 @@
 # My Developer Portfolio 🚀
 
-Welcome to my personal portfolio built with **Next.js** and **TailwindCSS**.  
-This project showcases my skills as a Frontend Developer and serves as a hub for my projects, experiments, and growth as a developer.
+Welcome to my personal portfolio built with **Next.js**, **TypeScript**, and **TailwindCSS**.  
+It showcases my projects, real-world experience, and growth as a Frontend Developer.
+
+🌐 [Live Demo](https://malgorzata-stano.netlify.app/) | 📂 [Repo](https://github.com/gosiast/NextJs-portfolio)
+
+---
 
 ## 🔨 Tech Stack
-- [Next.js](https://nextjs.org/) – React framework for production-ready apps
-- [TypeScript](https://www.typescriptlang.org/) – type safety & scalable code
-- [TailwindCSS](https://tailwindcss.com/) – utility-first styling
-- [HeroIcons](https://heroicons.com/) – modern SVG icons
-- [next-cloudinary](https://www.npmjs.com/package/next-cloudinary) – image optimization
-- [react-type-animation](https://www.npmjs.com/package/react-type-animation) – typewriter text animation
+**Core:** Next.js · React · TypeScript · Tailwind
 
-## 📸 Visuals
-- Images were generated using [Leonardo AI](https://app.leonardo.ai/ai-generations).
+---
 
-## 📬 Features
-- Responsive design (mobile-first)
-- Smooth animations
-- Contact form powered by [Resend](https://resend.com/docs/send-with-nextjs) for sending emails
-- Optimized images using Cloudinary
+## ✨ Features
+- Fully responsive (mobile-first)
+- Smooth animations & scroll-to-top
+- Testimonials carousel with LinkedIn recommendations
+
+---
 
 ## 📈 Continuous Improvement
-This portfolio started as a **JavaScript project**, but I later **rewrote it in TypeScript** to improve:
+This project started in plain JavaScript and was later refactored into TypeScript for:
 - ✅ Type safety  
 - ✅ Scalability  
 - ✅ Maintainability  
 
-It reflects my journey as a developer: not just building things that *work*, but refactoring and leveling them up with industry best practices.
+It reflects my journey: not just building apps, but continuously refactoring and improving with best practices.
 
-## 📚 Learning Resources
-This project was inspired by [Judy Gab’s tutorial](https://www.youtube.com/watch?v=Kb1f5bvF6f4&ab_channel=webdecoded).  
-Big thanks to the open-source community for documentation and resources:
-- [Next.js Documentation](https://nextjs.org/docs)
-- [Learn Next.js Tutorial](https://nextjs.org/learn)
-- [TypeScript Handbook](https://www.typescriptlang.org/docs/)
+---
 
 ## 🚀 Getting Started
 Clone the repo and install dependencies:
@@ -41,5 +35,11 @@ Clone the repo and install dependencies:
 ```bash
 git clone https://github.com/yourusername/portfolio-new.git
 cd portfolio-new
+
+# with npm
 npm install
 npm run dev
+
+# or with yarn
+yarn install
+yarn dev
