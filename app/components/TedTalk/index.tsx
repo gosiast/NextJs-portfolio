@@ -3,8 +3,8 @@ import React from "react";
 
 const TedTalk = () => {
   return (
-    <section className="text-white my-6" id="tedtalk">
-      <h2 className="text-center text-white font-bold mb-5 mt-3 text-3xl sm:text-5xl lg:text-3xl">
+    <section className="text-white mt-10" id="tedtalk">
+      <h2 className="text-center text-white font-bold my-5 mt-3 text-3xl sm:text-5xl lg:text-3xl">
         Persistence in Action
       </h2>
       <p className="text-[#ADB7BE] text-center md:text-lg mb-6 max-w-2xl mx-auto leading-relaxed">

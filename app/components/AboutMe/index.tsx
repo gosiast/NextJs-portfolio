@@ -16,19 +16,19 @@ const TAB_DATA: TabData[] = [
     content: (
       <ul className="list-disc pl-5">
         <li>
-          <strong className="text-pink-400">Frontend Technologies: </strong>
+          <strong className="text-pink-400">Frontend: </strong>
           HTML5, CSS3, ES6, JavaScript, Responsive Web Design
         </li>
         <li>
-          <strong className="text-pink-400">Frameworks & Libraries:</strong>{" "}
-          React.js, Next.js, TypeScript, Apollo Client (GraphQL)
+          <strong className="text-pink-400">Frameworks:</strong> React.js,
+          Next.js, TypeScript, Apollo Client (GraphQL)
         </li>
         <li>
           <strong className="text-pink-400">Styling:</strong> Tailwind CSS,
           Bootstrap, SASS, Storybook (for reusable UI components)
         </li>
         <li>
-          <strong className="text-pink-400">APIs & Data:</strong> GraphQL, REST
+          <strong className="text-pink-400">APIs:</strong> GraphQL, REST
         </li>
         <li>
           <strong className="text-pink-400">
@@ -78,33 +78,104 @@ const TAB_DATA: TabData[] = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-5">
-        {/* shortened for readability — your list goes here */}
+        <li>
+          <a
+            href="https://www.linkedin.com/learning/certificates/f441ea9a0b28e99aaf0564e8bc8a2ca3c2c710dd98380c920382385d14c3e669?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BmY36m3WlQ5GeEFVvEyJxzg%3D%3D"
+            target="_blank"
+            className="text-pink-400 hover:duration-300 hover:underline"
+          >
+            Agile Foundations
+          </a>{" "}
+          – LinkedIn, 07/2025
+        </li>
+        <li>
+          <a
+            href="https://www.codecademy.com/profiles/malgorzata_stano/certificates/1790781f3857d258b06a24f3c53424cd"
+            target="_blank"
+            className="text-pink-400 hover:duration-300 hover:underline"
+          >
+            Learn React Testing Course
+          </a>{" "}
+          – Codecademy, 06/2025
+        </li>
+        <li>
+          <a
+            href="https://charteredcertifications.com/learning/certificate/99006840"
+            target="_blank"
+            className="text-pink-400 hover:duration-300 hover:underline"
+          >
+            Certified Compliance Professional in Cryptocurrency Financial Crimes
+            (CCPC™)
+          </a>{" "}
+          – Chartered Institute of Professional Certifications, 05/2025
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/learning/certificates/6b527ec0654b063affbc4947db1be19a47789e9a8d81c9989b289b3f4c18c625?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B2D0D83ZvScOAj7TnAHbTMA%3D%3D"
+            target="_blank"
+            className="text-pink-400 hover:duration-300 hover:underline"
+          >
+            Tech Career Skills: Communication for Developers
+          </a>{" "}
+          – LinkedIn, 03/2025
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/learning/certificates/ceb00ee84696201dee9c88afae736ebdda7327efe45f1446d0a52582ff13645e?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B2D0D83ZvScOAj7TnAHbTMA%3D%3D"
+            target="_blank"
+            className="text-pink-400 hover:duration-300 hover:underline"
+          >
+            How Blockchains Will Change Business
+          </a>{" "}
+          – LinkedIn, 02/2025
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/learning/certificates/2eef26fe9ac4db1c701209c2bf88f4a880c604dbac886ec8f8442b149ef5ddae?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B2D0D83ZvScOAj7TnAHbTMA%3D%3D"
+            target="_blank"
+            className="text-pink-400 hover:duration-300 hover:underline"
+          >
+            JavaScript: Async
+          </a>{" "}
+          – LinkedIn, 01/2025
+        </li>
         <li>
           <a
             href="/certificates/TailwindUdemyCertificate.pdf"
             target="_blank"
-            className="text-pink-400 hover:duration-300 hover:underline"
+            className="text-pink-400 hover:duration-300 hover:undeline"
           >
-            Tailwind CSS - Zero to Hero - Tailwind v3 2023
-          </a>{" "}
-          - Udemy 01/2024
+            Tailwind CSS - Zero to Hero - Tailwind v3 2023{" "}
+          </a>
+          - Udemy 01/2024{" "}
+        </li>
+        <li className="mt-4 text-[#ADB7BE]">
+          Full list of my certifications can be found on my{" "}
+          <a
+            href="https://www.linkedin.com/in/malgorzata-stano/"
+            target="_blank"
+            className="text-pink-400 hover:underline"
+          >
+            LinkedIn profile
+          </a>
         </li>
       </ul>
     ),
   },
 ];
 
-const AboutSection: React.FC = () => {
-  const [tab, setTab] = useState<string>("skills");
-  const [, startTransition] = useTransition();
+// we create tab and useState so it stores info which tab is open
+const AboutSection = () => {
+  const [tab, setTab] = useState("skills");
+  const [isPending, startTransition] = useTransition();
 
-  const handleTabChange = (id: string) => {
+  //so it transitions and updates the UI with the hook above
+  // it updates the state without blocking the UI
+  const handleTabChange = (id) => {
     startTransition(() => {
       setTab(id);
     });
   };
-
-  const activeTab = TAB_DATA.find((t) => t.id === tab);
 
   return (
     <section className="text-white mt-2 mb-5" id="about">
@@ -119,7 +190,6 @@ const AboutSection: React.FC = () => {
           <h2 className="text-center text-white font-bold mb-5 mt-3 text-3xl sm:text:5xl lg:text-3xl">
             About Me
           </h2>
-
           <p className="text-[#ADB7BE] text-justify md:text-lg mb-6">
             Born and raised in Poland, I’ve been thriving in multicultural
             environments since 2017 and speak five languages fluently. In{" "}
@@ -132,7 +202,10 @@ const AboutSection: React.FC = () => {
             implemented the{" "}
             <strong className="text-pink-400">Compliance Hub</strong> — a tool
             that helps compliance officers review users, monitor risks, and
-            enforce policies with transparency.
+            enforce policies with transparency. This system was a key factor in
+            Decubate becoming the first crypto launchpad licensed under{" "}
+            <strong className="text-white">MiCAR</strong> (the EU’s new digital
+            asset regulation).
           </p>
 
           <p className="text-[#ADB7BE] text-justify md:text-lg mb-6">
@@ -149,7 +222,12 @@ const AboutSection: React.FC = () => {
               React, Next.js, TypeScript, GraphQL, and Tailwind
             </strong>{" "}
             to craft applications that scale — while keeping them intuitive and
-            enjoyable to use.
+            enjoyable to use. I live by the phrase{" "}
+            <strong className="text-pink-400">
+              “The world is your oyster”
+            </strong>
+            , and I see every project as a chance to grow, collaborate, and
+            create meaningful solutions 🌍
           </p>
 
           <div className="flex flex-row justify-start mt-8">
@@ -157,23 +235,27 @@ const AboutSection: React.FC = () => {
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
             >
-              Skills
+              {" "}
+              Skills{" "}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}
             >
-              Education
+              {" "}
+              Education{" "}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("certifications")}
               active={tab === "certifications"}
             >
-              Certifications
+              {" "}
+              Certifications{" "}
             </TabButton>
           </div>
-
-          <div className="mt-8">{activeTab?.content}</div>
+          <div className="mt-8">
+            {TAB_DATA.find((t) => t.id === tab).content}
+          </div>
         </div>
       </div>
     </section>
