@@ -6,7 +6,7 @@ const ContactMe = () => {
   return (
     <section
       id="contact"
-      className="flex flex-col md:flex-row items-center md:gap-8 xl:gap-16 sm:py-10 xl:px-4"
+      className="flex flex-col md:flex-row items-center md:gap-8 xl:gap-16 sm:py-4 xl:px-4"
     >
       {" "}
       <div className="md:w-1/2 text-center md:text-left">
@@ -17,7 +17,7 @@ const ContactMe = () => {
           I am currently looking for full-time remote opportunities as a
           Frontend Developer. Feel free to reach out!
         </p>
-        <div className="socials flex flex-row gap-4 justify-stretch">
+        <div className="socials flex flex-row md:gap-4 gap-8 md:justify-stretch justify-center">
           <Link href="https://github.com/gosiast" target="_blank">
             <Image
               src="/images/githubIcon.svg"

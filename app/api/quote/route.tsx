@@ -1,7 +1,6 @@
 import { NextResponse } from "next/server";
 import type { Quote, QuoteResponse } from "../../types";
 
-// 👉 fallback if external API fails
 const fallbackQuote: Quote = {
   content: "Persistence is the key to progress.",
   author: "Unknown",
@@ -9,9 +8,12 @@ const fallbackQuote: Quote = {
 
 export async function GET(): Promise<NextResponse<QuoteResponse>> {
   try {
-    const res = await fetch("https://zenquotes.io/api/random", {
-      cache: "no-store",
-    });
+    const res = await fetch(
+      `https://zenquotes.io/api/random?time=${Date.now()}`,
+      {
+        cache: "no-store",
+      },
+    );
 
     if (!res.ok) {
       return NextResponse.json(fallbackQuote, { status: 200 });
@@ -19,7 +21,6 @@ export async function GET(): Promise<NextResponse<QuoteResponse>> {
 
     const data = await res.json();
 
-    // ZenQuotes returns an array, so pick the first element
     const quote: Quote = {
       content: data[0]?.q ?? fallbackQuote.content,
       author: data[0]?.a ?? fallbackQuote.author,
@@ -29,7 +30,6 @@ export async function GET(): Promise<NextResponse<QuoteResponse>> {
   } catch (err: unknown) {
     console.error("Quote API error:", err);
 
-    // 👇 still return a valid quote instead of error
     return NextResponse.json(fallbackQuote, { status: 200 });
   }
 }

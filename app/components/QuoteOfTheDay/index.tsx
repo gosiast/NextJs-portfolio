@@ -2,16 +2,28 @@
 import React, { useEffect, useState } from "react";
 import { Quote, QuoteResponse } from "../../types";
 
+const button_labels = [
+  "Inspire me",
+  "Another thought",
+  "Fresh quote",
+  "Spark wisdom",
+  "Next insight",
+];
+
 const Spinner = () => (
-  <div className="flex justify-center">
-    <div className="h-6 w-6 animate-spin rounded-full border-2 border-pink-400 border-t-transparent" />
-  </div>
+  <div className="h-5 w-5 animate-spin rounded-full border-2 border-pink-400 border-t-transparent" />
 );
 
 const QuoteOfTheDay: React.FC = () => {
   const [quote, setQuote] = useState<Quote | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
+  const [buttonIndex, setButtonIndex] = useState(0);
+
+  const handleNewQuote = () => {
+    fetchQuote();
+    setButtonIndex((prev) => (prev + 1) % button_labels.length);
+  };
 
   const fetchQuote = async () => {
     try {
@@ -49,9 +61,7 @@ const QuoteOfTheDay: React.FC = () => {
         Quote of the Day ✨
       </h2>
 
-      {isLoading && <Spinner />}
-
-      {!isLoading && errorMessage && (
+      {errorMessage && (
         <div className="text-[#ADB7BE]">
           <p className="mb-4">Couldn’t load a quote, try again!</p>
           <button
@@ -63,7 +73,7 @@ const QuoteOfTheDay: React.FC = () => {
         </div>
       )}
 
-      {!isLoading && !errorMessage && quote && (
+      {quote && (
         <figure>
           <blockquote className="text-lg sm:text-xl italic leading-relaxed text-[#E5E7EB]">
             “{quote.content}”
@@ -73,10 +83,11 @@ const QuoteOfTheDay: React.FC = () => {
           </figcaption>
           <div className="mt-6 flex justify-center">
             <button
-              onClick={fetchQuote}
-              className="px-5 py-2 rounded-lg border border-white/20 text-white hover:scale-105 transition"
+              onClick={handleNewQuote}
+              className="px-5 py-2 rounded-lg border border-white/20 text-white hover:scale-105 transition flex items-center justify-center gap-2 min-w-[150px]"
+              disabled={isLoading}
             >
-              Spark inspiration
+              {isLoading ? <Spinner /> : button_labels[buttonIndex]}
             </button>
           </div>
         </figure>

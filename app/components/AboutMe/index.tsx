@@ -164,13 +164,10 @@ const TAB_DATA: TabData[] = [
   },
 ];
 
-// we create tab and useState so it stores info which tab is open
 const AboutSection = () => {
   const [tab, setTab] = useState("skills");
   const [isPending, startTransition] = useTransition();
 
-  //so it transitions and updates the UI with the hook above
-  // it updates the state without blocking the UI
   const handleTabChange = (id) => {
     startTransition(() => {
       setTab(id);

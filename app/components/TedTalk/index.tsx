@@ -4,6 +4,7 @@ import React from "react";
 const TedTalk = () => {
   return (
     <section className="text-white mt-10 scroll-mt-24" id="tedtalk">
+      <div className="h-px bg-slate-500/30 my-6" />
       <h2 className="text-center text-white font-bold my-5 mt-3 text-3xl sm:text-5xl lg:text-3xl">
         Persistence in Action
       </h2>
@@ -31,6 +32,7 @@ const TedTalk = () => {
           Your browser does not support the video tag.
         </video>
       </div>
+      <div className="h-px bg-slate-500/30 mt-6" />
     </section>
   );
 };
