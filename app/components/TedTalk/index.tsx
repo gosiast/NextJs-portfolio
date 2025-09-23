@@ -32,7 +32,6 @@ const TedTalk = () => {
           Your browser does not support the video tag.
         </video>
       </div>
-      <div className="h-px bg-slate-500/30 mt-6" />
     </section>
   );
 };

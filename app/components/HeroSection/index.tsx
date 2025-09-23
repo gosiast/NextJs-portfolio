@@ -37,9 +37,8 @@ const HeroSection = () => {
             <strong className="text-white">Frontend Developer</strong>, I’ve
             been living and working across six countries and now call
             <strong className="text-white"> Barcelona</strong> home. I love
-            building sleek, functional web applications with React, Next.js, and
-            TypeScript — mixing creativity, problem-solving, and a pinch of
-            curiosity ✨
+            building sleek, functional web applications — mixing creativity,
+            problem-solving, and a pinch of curiosity ✨
           </p>
           <div>
             <button
