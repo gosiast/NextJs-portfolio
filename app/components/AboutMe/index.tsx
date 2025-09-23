@@ -16,19 +16,15 @@ const TAB_DATA: TabData[] = [
     content: (
       <ul className="list-disc pl-5">
         <li>
-          <strong className="text-pink-400">Frontend: </strong>
-          HTML5, CSS3, ES6, JavaScript, Responsive Web Design
+          <strong className="text-pink-400">Frontend:</strong> HTML5, CSS3,
+          ES6+, JavaScript, React.js, Next.js, TypeScript, Apollo Client
         </li>
         <li>
-          <strong className="text-pink-400">Frameworks:</strong> React.js,
-          Next.js, TypeScript, Apollo Client (GraphQL)
+          <strong className="text-pink-400">Backend:</strong> GraphQL, REST
         </li>
         <li>
           <strong className="text-pink-400">Styling:</strong> Tailwind CSS,
-          Bootstrap, SASS, Storybook (for reusable UI components)
-        </li>
-        <li>
-          <strong className="text-pink-400">APIs:</strong> GraphQL, REST
+          Bootstrap, SASS, Storybook
         </li>
         <li>
           <strong className="text-pink-400">
@@ -190,31 +186,11 @@ const AboutSection = () => {
             About Me
           </h2>
           <p className="text-[#ADB7BE] text-justify md:text-lg mb-6">
-            Born and raised in Poland, I’ve been thriving in multicultural
-            environments since 2017 and speak five languages fluently. In{" "}
+            I’ve been thriving in multicultural environments since 2017 and
+            speak five languages fluently. In{" "}
             <strong className="text-white">2022</strong>, I made the leap from
             teaching English to coding — and never looked back.
           </p>
-
-          <p className="text-[#ADB7BE] text-justify md:text-lg mb-6">
-            At <strong className="text-white">Decubate</strong>, I designed and
-            implemented the{" "}
-            <strong className="text-pink-400">Compliance Hub</strong> — a tool
-            that helps compliance officers review users, monitor risks, and
-            enforce policies with transparency. This system was a key factor in
-            Decubate becoming the first crypto launchpad licensed under{" "}
-            <strong className="text-white">MiCAR</strong> (the EU’s new digital
-            asset regulation).
-          </p>
-
-          <p className="text-[#ADB7BE] text-justify md:text-lg mb-6">
-            Along the way, I built internal tools to streamline developer
-            workflows, optimized user-facing platforms, and introduced reusable
-            UI components with Storybook. My journey from self-taught junior to
-            mid-level developer taught me to embrace challenges, learn fast, and
-            always put user experience first 💡
-          </p>
-
           <p className="text-[#ADB7BE] text-justify md:text-lg">
             Today, I bring together{" "}
             <strong className="text-white">

@@ -8,6 +8,9 @@ export const metadata = {
   title: "Malgorzata Stano Portfolio",
   description:
     "Portfolio of Malgorzata Stano, a Frontend Developer based in Spain.",
+  icons: {
+    icon: "/images/favicon.ico",
+  },
 };
 
 interface RootLayoutProps {
