@@ -1,7 +1,4 @@
 "use client";
-{
-  /* eslint-disable-next-line react/no-unescaped-entities */
-}
 import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
@@ -50,8 +47,8 @@ const HeroSection = () => {
 
             <button className="px-7 py-4 w-full sm:w-fit rounded-lg mr-5 bg-transparent border border-pink-400 text-white font-medium mb-3 transition-all duration-300 ease-in-out hover:scale-105">
               <a
-                href="/Malgorzata Stano_Frontend_Developer.pdf"
-                download="/Malgorzata Stano_Frontend_Developer.pdf"
+                href="/Malgorzata_Stano_Frontend_Developer.pdf"
+                download="Malgorzata Stano_Frontend_Developer.pdf"
                 target="_blank"
               >
                 Resume Ready ✨{" "}
@@ -65,7 +62,7 @@ const HeroSection = () => {
           <Image
             src="/images/hero_photo.png"
             alt="animation of me, sitting with a computer and world map in the background"
-            className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 w-full sm:w-full"
+            className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 w-full sm:w-full mx-auto"
             width={400}
             height={400}
           />

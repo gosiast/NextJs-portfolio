@@ -16,7 +16,6 @@ const Home: React.FC = () => {
       <Navbar />
       <div className="container mt-24 mx-auto px-4 sm:px-6 md:px-8 py-4">
         <HeroSection />
-
         <ProjectsSection />
         <Testimonials />
         <TedTalk />
