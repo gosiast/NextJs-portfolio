@@ -32,17 +32,18 @@ const Testimonials: React.FC = () => {
               {testimonials[index].date}
             </span>
           </div>
-
-          <div className="flex justify-between mt-6">
+          <div className="flex justify-center gap-4 mt-6">
             <button
               onClick={prev}
-              className="px-3 py-1 rounded-lg border border-white/20 hover:bg-white/10"
+              className="px-3 py-1 rounded-full border-2 border-pink-400
+             bg-pink-400 hover:bg-black ease-in-out transition-all duration-300"
             >
               ‹
             </button>
+
             <button
               onClick={next}
-              className="px-3 py-1 rounded-lg border border-white/20 hover:bg-white/10"
+              className="px-3 py-1 rounded-full border-2 border-pink-400   bg-pink-400 hover:bg-black ease-in-out transition-all duration-300"
             >
               ›
             </button>

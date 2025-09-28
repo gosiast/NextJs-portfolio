@@ -3,16 +3,18 @@ import { CodeBracketIcon, GlobeAltIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
 interface ProjectCardProps {
-  imgUrl: string;
+  img_url: string;
   title: string;
+  technologies: string[];
   description: React.ReactNode;
   github_url?: string;
   website_url?: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
-  imgUrl,
+  img_url,
   title,
+  technologies,
   description,
   github_url,
   website_url,
@@ -22,7 +24,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <div
         className="h-52 md:h-72 rounded-t-xl relative group"
         style={{
-          background: `url(${imgUrl})`,
+          background: `url(${img_url})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -51,6 +53,18 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       </div>
       <div className="text-white rounded-b-xl bg-[#181818] py-6 px-4">
         <h5 className="text-xl font-bold mb-2">{title}</h5>
+        {technologies && technologies.length > 0 && (
+          <div className="flex flex-wrap gap-2 mb-3">
+            {technologies.map((tech, index) => (
+              <span
+                key={index}
+                className="text-pink-400 bg-pink-400/10 text-xs px-3 py-1 rounded-lg"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+        )}
         <div className="text-[#ADB7BE]">{description}</div>
       </div>
     </div>

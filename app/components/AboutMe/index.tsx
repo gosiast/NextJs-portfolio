@@ -179,7 +179,7 @@ const AboutSection = () => {
           alt="professional image of me"
           width={400}
           height={400}
-          className="order-2 md:order-1"
+          className="order-2 md:order-1 hidden md:block"
         />
         <div className="order-1 md:order-2 mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-center text-white font-bold mb-5 mt-3 text-3xl sm:text:5xl lg:text-3xl">
