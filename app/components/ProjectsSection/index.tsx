@@ -4,33 +4,6 @@ import ProjectCard from "../ProjectsCard";
 const projects_data = [
   {
     id: 1,
-    title: "Decubate Platform & Compliance Hub",
-    technologies: ["React", "TypeScript", "Tailwind", "Storybook", "Next.js"],
-    description: (
-      <p>
-        At Decubate, I maintained and enhanced the launchpad platform, built the{" "}
-        <strong>Compliance Hub</strong> from scratch for admins, and led UI/UX
-        improvements across the site — work that helped Decubate become the
-        first MiCAR-licensed crypto launchpad in the EU. The hero section above
-        is one of the Storybook components I designed and implemented. More
-        about my Decubate experience can be found on my{" "}
-        <a
-          href="https://www.linkedin.com/in/malgorzata-stano/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-pink-400 hover:underline"
-        >
-          LinkedIn profile
-        </a>
-        .
-      </p>
-    ),
-    image: "/images/projects/decubate.png",
-    github_url: "",
-    website_url: "https://platform.decubate.com/",
-  },
-  {
-    id: 2,
     title: "Frontend Developer – 8Billionminds",
     technologies: ["HTML", "CSS", "JavaScript"],
     description: (
@@ -44,6 +17,31 @@ const projects_data = [
     image: "/images/projects/8billionminds.png",
     github_url: "",
     website_url: "https://www.8billionminds.com/",
+  },
+  {
+    id: 2,
+    title: "Frontend Mentor",
+    technologies: ["Javascript", "HTML", "CSS", "STYLED COMPONENTS"],
+    description: (
+      <p>
+        A collection of practice projects from{" "}
+        <a
+          href="https://www.frontendmentor.io/profile/gosiast"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-pink-400 hover:underline"
+        >
+          Frontend Mentor
+        </a>
+        . My most recent challenge focused on{" "}
+        <strong>exploring Styled-Components</strong> — I built a Huddle Landing
+        Page to get hands-on experience with component-based styling, theming,
+        and responsive layouts.
+      </p>
+    ),
+    image: "/images/projects/frontend_mentor_profile.png",
+    github_url: "",
+    website_url: "https://www.frontendmentor.io/profile/gosiast",
   },
   {
     id: 3,
@@ -84,7 +82,7 @@ const ProjectsSection = () => {
         className="text-center text-3xl font-bold text-white mb-5 mt-3 scroll-mt-24"
         id="projects"
       >
-        Projects & Experience{" "}
+        Personal Projects
       </h2>
       <div className="grid md:grid-cols-2 gap-8 md:gap-12">
         {projects_data.map((project) => (

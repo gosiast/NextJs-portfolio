@@ -44,9 +44,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <Link
               href={website_url}
               target="_blank"
-              className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
+              className="w-[25%] aspect-square border-2 rounded-full border-[#ADB7BE] hover:border-white group/link flex items-center justify-center min-w-[40px] max-w-[70px]"
             >
-              <GlobeAltIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 group-hover/link:text-white" />
+              <GlobeAltIcon className="w-[60%] h-[60%] text-[#ADB7BE] group-hover/link:text-white" />
             </Link>
           )}
         </div>
