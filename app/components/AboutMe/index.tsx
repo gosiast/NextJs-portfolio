@@ -189,7 +189,8 @@ const AboutSection = () => {
             I’ve been thriving in multicultural environments since 2017 and
             speak five languages fluently. In{" "}
             <strong className="text-white">2022</strong>, I made the leap from
-            teaching English to coding — and never looked back.
+            teaching English to coding — and never looked back. Self-taught,
+            with no CS degree or bootcamp.
           </p>
           <p className="text-[#ADB7BE] text-justify md:text-lg">
             Today, I bring together{" "}
