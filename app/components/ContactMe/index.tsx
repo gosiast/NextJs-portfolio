@@ -9,7 +9,7 @@ const ContactMe = () => {
       className="flex flex-col md:flex-row items-center md:gap-8 xl:gap-16 sm:py-4 xl:px-4"
     >
       {" "}
-      <div className="md:w-1/2 text-center md:text-left">
+      <div className="md:w-1/2 text-left">
         <h5 className="text-3xl font-bold text-white mb-5">
           Let&apos;s Connect!
         </h5>

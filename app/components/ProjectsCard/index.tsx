@@ -1,6 +1,7 @@
 import React from "react";
 import { CodeBracketIcon, GlobeAltIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import Image from "next/image";
 
 interface ProjectCardProps {
   img_url: string;
@@ -29,14 +30,19 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           backgroundPosition: "center",
         }}
       >
-        <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 ">
+        <div className="absolute inset-0 flex items-center justify-center bg-[#181818]/0 opacity-0 group-hover:opacity-100 group-hover:bg-[#181818]/80 transition-all duration-500 ease-in-out pointer-events-none group-hover:pointer-events-auto">
           {github_url && (
             <Link
               href={github_url}
               target="_blank"
-              className="h-14 w-14 mr-4 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
+              className="flex items-center justify-center h-14 w-14 rounded-full border border-[#ADB7BE] bg-white/80 hover:bg-white hover:scale-110 transition-transform duration-300 ease-out"
             >
-              <CodeBracketIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 group-hover/link:text-white" />
+              <Image
+                src="/images/github.png"
+                alt="GitHub Icon"
+                width={28}
+                height={28}
+              />
             </Link>
           )}
 
@@ -44,9 +50,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <Link
               href={website_url}
               target="_blank"
-              className="w-[25%] aspect-square border-2 rounded-full border-[#ADB7BE] hover:border-white group/link flex items-center justify-center min-w-[40px] max-w-[70px]"
+              className="flex items-center justify-center h-14 w-14 rounded-full border border-[#ADB7BE] bg-white/80 hover:bg-white hover:scale-110 transition-transform duration-300 ease-out ml-6"
             >
-              <GlobeAltIcon className="w-[60%] h-[60%] text-[#ADB7BE] group-hover/link:text-white" />
+              <Image
+                src="/images/www.png"
+                alt="Website Icon"
+                width={28}
+                height={28}
+              />
             </Link>
           )}
         </div>
