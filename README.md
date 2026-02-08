@@ -50,10 +50,4 @@ yarn dev
 [Open]([http://localhost:3000](https://malgorzata-stano.netlify.app/)) to view it.
 
 ## Let's Connect
-📧 [your-email]  
-💼 [LinkedIn](link)  
-🌐 [Live Portfolio](https://malgorzata-stano.netlify.app/)
-
----
-
-*This portfolio is open source and continuously improved. Feel free to explore the code!*
+💼 [LinkedIn](https://www.linkedin.com/in/malgorzata-stano/?skipRedirect=true)  
