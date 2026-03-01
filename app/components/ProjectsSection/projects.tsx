@@ -1,5 +1,21 @@
 export const projects_data = [
   {
+    id: 5,
+    title: "The World Is My Oyster",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "MDX"],
+    description: (
+      <p>
+        A personal travel blog built to explore AI-assisted development with
+        Claude Code. Features MDX-powered blog posts, static site generation,
+        and a clean reading experience — with stories from places like Lombok,
+        Indonesia.
+      </p>
+    ),
+    image: "/images/projects/travel_blog.png",
+    github_url: "https://github.com/gosiast/the-world-is-my-oyster",
+    website_url: "https://the-world-is-my-oyster.netlify.app/blog/lombok-2025",
+  },
+  {
     id: 1,
     title: "Frontend Mentor",
     technologies: ["Javascript", "HTML", "CSS", "STYLED COMPONENTS"],
