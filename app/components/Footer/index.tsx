@@ -9,6 +9,7 @@ const Footer = () => {
           <a
             href="https://github.com/gosiast/NextJs-portfolio"
             target="_blank"
+            rel="noopener noreferrer"
             className="text-pink-400 hover:duration-300 hover:underline"
           >
             open source
@@ -17,6 +18,7 @@ const Footer = () => {
           <a
             href="https://github.com/gosiast"
             target="_blank"
+            rel="noopener noreferrer"
             className="hover:text-pink-400
     hover:duration-300 hover:underline"
           >

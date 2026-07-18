@@ -1,11 +1,11 @@
 import React from "react";
 import Link from "next/link";
 
-const NavLink = ({ href, title }) => {
+const NavLink = ({ href, title }: { href: string; title: string }) => {
   return (
     <Link
       href={href}
-      className="block py-2 pl-3 pr-4 sm-text:xl text-white rounded md:p-0 hover:text-pink-400"
+      className="block py-2 pl-3 pr-4 sm:text-xl text-white rounded md:p-0 hover:text-pink-400"
     >
       {title}
     </Link>

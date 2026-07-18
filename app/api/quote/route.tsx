@@ -6,6 +6,9 @@ const fallbackQuote: Quote = {
   author: "Unknown",
 };
 
+// Dynamic, per-request data — never cache at the edge or in the browser.
+const NO_STORE = { "Cache-Control": "no-store" };
+
 export async function GET(): Promise<NextResponse<QuoteResponse>> {
   try {
     const res = await fetch(
@@ -16,7 +19,7 @@ export async function GET(): Promise<NextResponse<QuoteResponse>> {
     );
 
     if (!res.ok) {
-      return NextResponse.json(fallbackQuote, { status: 200 });
+      return NextResponse.json(fallbackQuote, { status: 200, headers: NO_STORE });
     }
 
     const data = await res.json();
@@ -26,10 +29,10 @@ export async function GET(): Promise<NextResponse<QuoteResponse>> {
       author: data[0]?.a ?? fallbackQuote.author,
     };
 
-    return NextResponse.json(quote, { status: 200 });
+    return NextResponse.json(quote, { status: 200, headers: NO_STORE });
   } catch (err: unknown) {
     console.error("Quote API error:", err);
 
-    return NextResponse.json(fallbackQuote, { status: 200 });
+    return NextResponse.json(fallbackQuote, { status: 200, headers: NO_STORE });
   }
 }

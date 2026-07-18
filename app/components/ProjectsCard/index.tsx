@@ -22,19 +22,20 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <div>
-      <div
-        className="h-52 md:h-72 rounded-t-xl relative group"
-        style={{
-          background: `url(${img_url})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
+      <div className="h-52 md:h-72 rounded-t-xl relative group overflow-hidden">
+        <Image
+          src={img_url}
+          alt={`${title} project screenshot`}
+          fill
+          sizes="(max-width: 768px) 100vw, 50vw"
+          className="object-cover object-center"
+        />
         <div className="absolute inset-0 flex items-center justify-center bg-[#181818]/0 opacity-0 group-hover:opacity-100 group-hover:bg-[#181818]/80 transition-all duration-500 ease-in-out pointer-events-none group-hover:pointer-events-auto">
           {github_url && (
             <Link
               href={github_url}
               target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center justify-center h-14 w-14 rounded-full border border-[#ADB7BE] bg-white/80 hover:bg-white hover:scale-110 transition-transform duration-300 ease-out"
             >
               <Image
@@ -50,6 +51,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <Link
               href={website_url}
               target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center justify-center h-14 w-14 rounded-full border border-[#ADB7BE] bg-white/80 hover:bg-white hover:scale-110 transition-transform duration-300 ease-out ml-6"
             >
               <Image

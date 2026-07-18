@@ -14,11 +14,16 @@ const ContactMe = () => {
           Let&apos;s Connect!
         </h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md text-justify md:text-lg">
-          I am currently looking for full-time remote opportunities as a
-          Frontend Developer. Feel free to reach out!
+          I love building for the web and I&apos;m always happy to connect —
+          whether it&apos;s to swap ideas, talk shop, or collaborate on
+          something interesting. Feel free to reach out!
         </p>
         <div className="socials flex flex-row md:gap-4 gap-8 md:justify-stretch justify-center">
-          <Link href="https://github.com/gosiast" target="_blank">
+          <Link
+            href="https://github.com/gosiast"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Image
               src="/images/githubIcon.svg"
               alt="GitHub Icon"
@@ -30,6 +35,7 @@ const ContactMe = () => {
           <Link
             href="https://www.linkedin.com/in/malgorzata-stano/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <Image
               src="/images/linkedinIcon.svg"
@@ -41,7 +47,7 @@ const ContactMe = () => {
           </Link>
           <Link href="mailto:stano.malgorzata@gmail.com" target="_blank">
             <Image
-              src="/images/EmailIcon.svg"
+              src="/images/emailIcon.svg"
               alt="Email Icon"
               className="transition-transform duration-300 hover:scale-110 hover:brightness-125 cursor-pointer"
               width={48}

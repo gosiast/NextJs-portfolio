@@ -10,6 +10,11 @@ import TedTalk from "./components/TedTalk";
 import React from "react";
 import Testimonials from "./components/Testimonials";
 
+// Rendered per-request so the nonce-based CSP set in middleware.ts is applied
+// to Next's inline scripts. Without this the page is prerendered statically and
+// the script nonce won't match the per-request CSP header (scripts get blocked).
+export const dynamic = "force-dynamic";
+
 const Home: React.FC = () => {
   return (
     <main className="flex min-h-screen flex-col bg-[#121212]">

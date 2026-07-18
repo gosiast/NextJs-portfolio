@@ -49,6 +49,7 @@ const TAB_DATA: TabData[] = [
           <a
             href="https://www.shecodes.io/"
             target="_blank"
+            rel="noopener noreferrer"
             className="hover:text-pink-400 hover:duration-300 hover:underline"
           >
             SheCodes Training Program 2021–2022
@@ -78,6 +79,7 @@ const TAB_DATA: TabData[] = [
           <a
             href="https://www.linkedin.com/learning/certificates/f441ea9a0b28e99aaf0564e8bc8a2ca3c2c710dd98380c920382385d14c3e669?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BmY36m3WlQ5GeEFVvEyJxzg%3D%3D"
             target="_blank"
+            rel="noopener noreferrer"
             className="text-pink-400 hover:duration-300 hover:underline"
           >
             Agile Foundations
@@ -88,6 +90,7 @@ const TAB_DATA: TabData[] = [
           <a
             href="https://www.codecademy.com/profiles/malgorzata_stano/certificates/1790781f3857d258b06a24f3c53424cd"
             target="_blank"
+            rel="noopener noreferrer"
             className="text-pink-400 hover:duration-300 hover:underline"
           >
             Learn React Testing Course
@@ -98,6 +101,7 @@ const TAB_DATA: TabData[] = [
           <a
             href="https://charteredcertifications.com/learning/certificate/99006840"
             target="_blank"
+            rel="noopener noreferrer"
             className="text-pink-400 hover:duration-300 hover:underline"
           >
             Certified Compliance Professional in Cryptocurrency Financial Crimes
@@ -109,6 +113,7 @@ const TAB_DATA: TabData[] = [
           <a
             href="https://www.linkedin.com/learning/certificates/6b527ec0654b063affbc4947db1be19a47789e9a8d81c9989b289b3f4c18c625?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B2D0D83ZvScOAj7TnAHbTMA%3D%3D"
             target="_blank"
+            rel="noopener noreferrer"
             className="text-pink-400 hover:duration-300 hover:underline"
           >
             Tech Career Skills: Communication for Developers
@@ -119,6 +124,7 @@ const TAB_DATA: TabData[] = [
           <a
             href="https://www.linkedin.com/learning/certificates/ceb00ee84696201dee9c88afae736ebdda7327efe45f1446d0a52582ff13645e?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B2D0D83ZvScOAj7TnAHbTMA%3D%3D"
             target="_blank"
+            rel="noopener noreferrer"
             className="text-pink-400 hover:duration-300 hover:underline"
           >
             How Blockchains Will Change Business
@@ -129,6 +135,7 @@ const TAB_DATA: TabData[] = [
           <a
             href="https://www.linkedin.com/learning/certificates/2eef26fe9ac4db1c701209c2bf88f4a880c604dbac886ec8f8442b149ef5ddae?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B2D0D83ZvScOAj7TnAHbTMA%3D%3D"
             target="_blank"
+            rel="noopener noreferrer"
             className="text-pink-400 hover:duration-300 hover:underline"
           >
             JavaScript: Async
@@ -139,6 +146,7 @@ const TAB_DATA: TabData[] = [
           <a
             href="/certificates/TailwindUdemyCertificate.pdf"
             target="_blank"
+            rel="noopener noreferrer"
             className="text-pink-400 hover:duration-300 hover:undeline"
           >
             Tailwind CSS - Zero to Hero - Tailwind v3 2023{" "}
@@ -150,6 +158,7 @@ const TAB_DATA: TabData[] = [
           <a
             href="https://www.linkedin.com/in/malgorzata-stano/"
             target="_blank"
+            rel="noopener noreferrer"
             className="text-pink-400 hover:underline"
           >
             LinkedIn profile
@@ -164,7 +173,7 @@ const AboutSection = () => {
   const [tab, setTab] = useState("skills");
   const [isPending, startTransition] = useTransition();
 
-  const handleTabChange = (id) => {
+  const handleTabChange = (id: string) => {
     startTransition(() => {
       setTab(id);
     });
@@ -182,7 +191,7 @@ const AboutSection = () => {
           className="order-2 md:order-1 hidden md:block"
         />
         <div className="order-1 md:order-2 mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-center text-white font-bold mb-5 mt-3 text-3xl sm:text:5xl lg:text-3xl">
+          <h2 className="text-center text-white font-bold mb-5 mt-3 text-3xl sm:text-5xl lg:text-3xl">
             About Me
           </h2>
           <p className="text-[#ADB7BE] text-justify md:text-lg mb-6">
@@ -230,7 +239,7 @@ const AboutSection = () => {
             </TabButton>
           </div>
           <div className="mt-8">
-            {TAB_DATA.find((t) => t.id === tab).content}
+            {TAB_DATA.find((t) => t.id === tab)?.content}
           </div>
         </div>
       </div>

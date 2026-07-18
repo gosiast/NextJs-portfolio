@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 
 const HeroSection = () => {
@@ -8,7 +9,7 @@ const HeroSection = () => {
     <section className="lg:flex mx-auto">
       <div className="display-block grid grid-cols-1 sm:grid-cols-12">
         <div className="col-span-8 place-self-center text-center sm:text-left">
-          <h1 className="text-white mb-8 mt-10 text-4xl sm:text:5xl lg:text-5xl font-extrabold">
+          <h1 className="text-white mb-8 mt-10 text-4xl sm:text-5xl lg:text-5xl font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-br from-pink-700 via-purple-400 to-blue-400 hover:bg-slate-400">
               Hello, I&apos;m
             </span>
@@ -38,22 +39,22 @@ const HeroSection = () => {
             problem-solving, and a pinch of curiosity ✨
           </p>
           <div>
-            <button
-              className="px-7 py-4 w-full sm:w-fit rounded-lg mr-5 bg-gradient-to-br from-pink-700 via-purple-400 to-blue-400 text-white font-medium mb-3
-  transition-all duration-300 ease-in-out hover:scale-105 hover:brightness-110"
+            <Link
+              href="/#contact"
+              className="inline-block text-center px-7 py-4 w-full sm:w-fit rounded-lg mr-5 bg-gradient-to-br from-pink-700 via-purple-400 to-blue-400 text-white font-medium mb-3 transition-all duration-300 ease-in-out hover:scale-105 hover:brightness-110"
             >
-              <a href="/#contact">Contact Me</a>
-            </button>
+              Contact Me
+            </Link>
 
-            <button className="px-7 py-4 w-full sm:w-fit rounded-lg mr-5 bg-transparent border border-pink-400 text-white font-medium mb-3 transition-all duration-300 ease-in-out hover:scale-105">
-              <a
-                href="/Malgorzata_Stano_Frontend_Developer.pdf"
-                download="Malgorzata Stano_Frontend_Developer.pdf"
-                target="_blank"
-              >
-                Resume Ready ✨{" "}
-              </a>
-            </button>
+            <a
+              href="/Malgorzata_Stano_Frontend_Developer.pdf"
+              download="Malgorzata Stano_Frontend_Developer.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block text-center px-7 py-4 w-full sm:w-fit rounded-lg mr-5 bg-transparent border border-pink-400 text-white font-medium mb-3 transition-all duration-300 ease-in-out hover:scale-105"
+            >
+              Resume Ready ✨
+            </a>
           </div>
         </div>
       </div>

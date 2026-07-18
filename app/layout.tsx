@@ -35,6 +35,12 @@ export const metadata = {
     locale: "en_US",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Malgorzata Stano | Frontend Developer Portfolio",
+    description:
+      "Frontend Developer based in Barcelona. Building sleek, functional web apps using React, Next.js, and Tailwind.",
+  },
   icons: {
     icon: "/images/favicon.ico",
   },
