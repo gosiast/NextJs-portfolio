@@ -10,7 +10,7 @@ export const metadata = {
     default: "Malgorzata Stano | Frontend Developer Portfolio",
   },
   description:
-    "Portfolio of Malgorzata (Gosia) Stano — Frontend Developer based in Barcelona, crafting responsive, user-friendly web applications with React, Next.js, and Tailwind.",
+    "Portfolio of Malgorzata (Gosia) Stano - Frontend Developer based in Barcelona, crafting responsive, user-friendly web applications with React, Next.js, and Tailwind.",
   keywords: [
     "Malgorzata Stano",
     "Gosia Stano",

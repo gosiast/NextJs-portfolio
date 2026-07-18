@@ -7,7 +7,7 @@ export const projects_data = [
       <p>
         A personal travel blog built to explore AI-assisted development with
         Claude Code. Features MDX-powered blog posts, static site generation,
-        and a clean reading experience — with stories from places like Lombok,
+        and a clean reading experience - with stories from places like Lombok,
         Indonesia.
       </p>
     ),
@@ -31,7 +31,7 @@ export const projects_data = [
           Frontend Mentor
         </a>
         . My most recent challenge focused on{" "}
-        <strong>exploring Styled-Components</strong> — I built a Huddle Landing
+        <strong>exploring Styled-Components</strong> - I built a Huddle Landing
         Page to get hands-on experience with component-based styling, theming,
         and responsive layouts.
       </p>

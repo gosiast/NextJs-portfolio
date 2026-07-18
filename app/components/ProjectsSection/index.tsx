@@ -4,12 +4,12 @@ import { projects_data } from "./projects";
 
 const ProjectsSection = () => {
   return (
-    <>
-      <h2
-        className="text-center text-3xl font-bold text-white mb-5 mt-3 scroll-mt-24"
-        id="projects"
-      >
-        Personal Projects
+    <section className="py-12 md:py-20 scroll-mt-24" id="projects">
+      <p className="mb-3 text-center text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] text-pink-400">
+        Personal projects
+      </p>
+      <h2 className="text-center text-white font-bold mb-8 text-3xl sm:text-4xl">
+        Things I&apos;ve built
       </h2>
       <div className="grid md:grid-cols-2 gap-8 md:gap-12">
         {projects_data.map((project) => (
@@ -24,7 +24,7 @@ const ProjectsSection = () => {
           />
         ))}
       </div>
-    </>
+    </section>
   );
 };
 

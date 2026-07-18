@@ -21,12 +21,12 @@ const nav_links = [
     path: "/#tedtalk",
   },
   {
-    title: "inspiration",
-    path: "/#inspiration",
-  },
-  {
     title: "Contact",
     path: "/#contact",
+  },
+  {
+    title: "Inspiration",
+    path: "/#inspiration",
   },
 ];
 

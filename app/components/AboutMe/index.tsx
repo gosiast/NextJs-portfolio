@@ -171,7 +171,7 @@ const TAB_DATA: TabData[] = [
 
 const AboutSection = () => {
   const [tab, setTab] = useState("skills");
-  const [isPending, startTransition] = useTransition();
+  const [, startTransition] = useTransition();
 
   const handleTabChange = (id: string) => {
     startTransition(() => {
@@ -180,7 +180,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white mt-2 mb-5" id="about">
+    <section className="text-white py-12 md:py-20 scroll-mt-24" id="about">
       <div className="flex flex-col md:grid md:grid-cols-2 gap-8 items-center xl:gap-4 sm:py-16 xl:px-4 w-full">
         {" "}
         <Image
@@ -191,29 +191,40 @@ const AboutSection = () => {
           className="order-2 md:order-1 hidden md:block"
         />
         <div className="order-1 md:order-2 mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-center text-white font-bold mb-5 mt-3 text-3xl sm:text-5xl lg:text-3xl">
-            About Me
+          <p className="mb-3 text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] text-pink-400">
+            About
+          </p>
+          <h2 className="text-white font-bold mb-5 text-3xl sm:text-4xl">
+            Teacher turned developer
           </h2>
-          <p className="text-[#ADB7BE] text-justify md:text-lg mb-6">
-            I’ve been thriving in multicultural environments since 2017 and
-            speak five languages fluently. In{" "}
-            <strong className="text-white">2022</strong>, I made the leap from
-            teaching English to coding — and never looked back. Self-taught,
-            with no CS degree or bootcamp.
-          </p>
-          <p className="text-[#ADB7BE] text-justify md:text-lg">
-            Today, I bring together{" "}
-            <strong className="text-white">
-              React, Next.js, TypeScript, GraphQL, and Tailwind
-            </strong>{" "}
-            to craft applications that scale — while keeping them intuitive and
-            enjoyable to use. I live by the phrase{" "}
-            <strong className="text-pink-400">
-              “The world is your oyster”
-            </strong>
-            , and I see every project as a chance to grow, collaborate, and
-            create meaningful solutions 🌍
-          </p>
+          <div className="max-w-[60ch] space-y-5">
+            <p className="text-[#ADB7BE] md:text-lg leading-relaxed">
+              I&apos;ve thrived in multicultural environments since 2017 and
+              speak five languages. In{" "}
+              <strong className="text-white">2022</strong> I traded teaching
+              English for code - self-taught, no CS degree or bootcamp - and
+              never looked back.
+            </p>
+            <p className="text-[#ADB7BE] md:text-lg leading-relaxed">
+              Since then I&apos;ve gone from small practice apps to shipping
+              production features on a live web platform used by real people -
+              stretching well beyond the UI into testing, security, CI,
+              infrastructure, and AI-assisted workflows.
+            </p>
+            <p className="text-[#ADB7BE] md:text-lg leading-relaxed">
+              Today I build with{" "}
+              <strong className="text-white">
+                React, Next.js, TypeScript, GraphQL, and Tailwind
+              </strong>
+              . I&apos;m not chasing my next job title - I&apos;m chasing the
+              next thing to learn, and I treat every project as a chance to
+              grow.{" "}
+              <strong className="text-pink-400">
+                The world is your oyster
+              </strong>{" "}
+              🌍
+            </p>
+          </div>
 
           <div className="flex flex-row justify-start mt-8">
             <TabButton

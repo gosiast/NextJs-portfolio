@@ -57,9 +57,9 @@ const QuoteOfTheDay: React.FC = () => {
       id="inspiration"
       className="text-white my-12 text-center scroll-mt-24"
     >
-      <h2 className="font-bold mb-5 mt-3 text-2xl sm:text-3xl">
-        Quote of the Day ✨
-      </h2>
+      <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-pink-400">
+        Daily spark ✨
+      </p>
 
       {errorMessage && (
         <div className="text-[#ADB7BE]">
@@ -74,17 +74,17 @@ const QuoteOfTheDay: React.FC = () => {
       )}
 
       {quote && (
-        <figure>
-          <blockquote className="text-lg sm:text-xl italic leading-relaxed text-[#E5E7EB]">
+        <figure className="mx-auto max-w-xl">
+          <blockquote className="text-base sm:text-lg italic leading-relaxed text-[#ADB7BE]">
             “{quote.content}”
           </blockquote>
-          <figcaption className="mt-3 text-pink-400 font-medium">
+          <figcaption className="mt-2 text-sm text-pink-400 font-medium">
             — {quote.author}
           </figcaption>
-          <div className="mt-6 flex justify-center">
+          <div className="mt-4 flex justify-center">
             <button
               onClick={handleNewQuote}
-              className="px-5 py-2 rounded-lg border border-white/20 text-white hover:scale-105 transition flex items-center justify-center gap-2 min-w-[150px]"
+              className="px-4 py-1.5 text-xs rounded-lg border border-white/15 text-[#ADB7BE] hover:text-white hover:border-white/40 transition flex items-center justify-center gap-2 min-w-[130px]"
               disabled={isLoading}
             >
               {isLoading ? <Spinner /> : button_labels[buttonIndex]}

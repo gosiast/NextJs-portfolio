@@ -11,8 +11,13 @@ const Testimonials: React.FC = () => {
     setIndex((i) => (i === testimonials.length - 1 ? 0 : i + 1));
 
   return (
-    <section id="testimonials" className="text-white my-16 scroll-mt-24">
-      <h2 className="text-center text-3xl font-bold mb-6">Testimonials</h2>
+    <section id="testimonials" className="text-white py-12 md:py-20 scroll-mt-24">
+      <p className="mb-3 text-center text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] text-pink-400">
+        Kind words
+      </p>
+      <h2 className="text-center text-white font-bold mb-8 text-3xl sm:text-4xl">
+        What people say
+      </h2>
 
       <div className="container mx-auto px-6">
         <div className="bg-[#181818] rounded-lg p-6 relative">

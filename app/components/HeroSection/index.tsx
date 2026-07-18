@@ -28,22 +28,21 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[#ADB7BE] text-justify md:text-lg mb-6">
-            Hi, I&apos;m <strong className="text-pink-400 mr-1">Gosia</strong>
-            (short for <strong className="text-white">Małgorzata</strong>),
-            former English teacher turned{" "}
-            <strong className="text-white">Frontend Developer</strong>, I’ve
-            been living and working across six countries and now call
-            <strong className="text-white"> Barcelona</strong> home. I love
-            building sleek, functional web applications — mixing creativity,
-            problem-solving, and a pinch of curiosity ✨
+          <p className="text-[#ADB7BE] md:text-lg mb-6 leading-relaxed max-w-[58ch] mx-auto sm:mx-0">
+            I&apos;m <strong className="text-pink-400">Gosia</strong> - short for{" "}
+            <strong className="text-white">Małgorzata</strong> - a former English
+            teacher turned <strong className="text-white">Frontend Developer</strong>,
+            now based in <strong className="text-white">Barcelona</strong> after
+            living and working across six countries. These days I&apos;m
+            heads-down building for the web: this site is my playground, and every
+            project on it has taught me something new ✨
           </p>
           <div>
             <Link
               href="/#contact"
-              className="inline-block text-center px-7 py-4 w-full sm:w-fit rounded-lg mr-5 bg-gradient-to-br from-pink-700 via-purple-400 to-blue-400 text-white font-medium mb-3 transition-all duration-300 ease-in-out hover:scale-105 hover:brightness-110"
+              className="inline-block text-center px-7 py-4 w-full sm:w-fit rounded-lg sm:mr-5 bg-gradient-to-br from-pink-700 via-purple-400 to-blue-400 text-white font-medium mb-3 transition-all duration-300 ease-in-out hover:scale-105 hover:brightness-110"
             >
-              Contact Me
+              Let&apos;s Connect
             </Link>
 
             <a
@@ -51,9 +50,9 @@ const HeroSection = () => {
               download="Malgorzata Stano_Frontend_Developer.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block text-center px-7 py-4 w-full sm:w-fit rounded-lg mr-5 bg-transparent border border-pink-400 text-white font-medium mb-3 transition-all duration-300 ease-in-out hover:scale-105"
+              className="inline-block text-center px-7 py-4 w-full sm:w-fit rounded-lg sm:mr-5 bg-transparent border border-pink-400 text-white font-medium mb-3 transition-all duration-300 ease-in-out hover:scale-105"
             >
-              Resume Ready ✨
+              My Resumé
             </a>
           </div>
         </div>

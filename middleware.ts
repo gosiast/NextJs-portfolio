@@ -12,9 +12,17 @@ export function middleware(request: NextRequest) {
   crypto.getRandomValues(bytes);
   const nonce = btoa(String.fromCharCode(...bytes));
 
+  // Next.js dev (Fast Refresh / webpack HMR) evaluates modules via eval(), so
+  // 'unsafe-eval' is required for the client bundle to run locally. Production
+  // builds never use eval — keep the strict policy there. Dev-only relaxation.
+  const isDev = process.env.NODE_ENV !== "production";
+  const scriptSrc = isDev
+    ? `script-src 'self' 'nonce-${nonce}' 'strict-dynamic' 'unsafe-eval'`
+    : `script-src 'self' 'nonce-${nonce}' 'strict-dynamic'`;
+
   const csp = [
     `default-src 'self'`,
-    `script-src 'self' 'nonce-${nonce}' 'strict-dynamic'`,
+    scriptSrc,
     // Tailwind ships a static stylesheet, but Next/React still emit inline
     // style attributes; 'unsafe-inline' for styles is permitted by policy.
     `style-src 'self' 'unsafe-inline'`,
