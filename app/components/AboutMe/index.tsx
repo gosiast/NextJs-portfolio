@@ -20,11 +20,16 @@ const TAB_DATA: TabData[] = [
           ES6+, JavaScript, React.js, Next.js, TypeScript, Apollo Client
         </li>
         <li>
+          <strong className="text-pink-400">AI Engineering:</strong> Anthropic
+          Claude API, Vercel AI SDK, streaming &amp; RAG, MCP servers, prompt
+          engineering
+        </li>
+        <li>
           <strong className="text-pink-400">Backend:</strong> GraphQL, REST
         </li>
         <li>
           <strong className="text-pink-400">Styling:</strong> Tailwind CSS,
-          Bootstrap, SASS, Storybook
+          Bootstrap, SASS
         </li>
         <li>
           <strong className="text-pink-400">
@@ -34,8 +39,8 @@ const TAB_DATA: TabData[] = [
         </li>
         <li>
           <strong className="text-pink-400">Developer Tools & Workflow:</strong>{" "}
-          ESLint, Prettier, Browser DevTools, CI/CD workflows, GitHub API
-          automation
+          Storybook, ESLint, Prettier, Browser DevTools, CI/CD workflows, GitHub
+          API automation
         </li>
       </ul>
     ),
@@ -147,7 +152,7 @@ const TAB_DATA: TabData[] = [
             href="/certificates/TailwindUdemyCertificate.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-pink-400 hover:duration-300 hover:undeline"
+            className="text-pink-400 hover:duration-300 hover:underline"
           >
             Tailwind CSS - Zero to Hero - Tailwind v3 2023{" "}
           </a>
@@ -214,12 +219,14 @@ const AboutSection = () => {
             <p className="text-[#ADB7BE] md:text-lg leading-relaxed">
               Today I build with{" "}
               <strong className="text-white">
-                React, Next.js, TypeScript, GraphQL, and Tailwind
-              </strong>
-              . I&apos;m not chasing my next job title - I&apos;m chasing the
-              next thing to learn, and I treat every project as a chance to
-              grow.{" "}
-              <strong className="text-pink-400">
+                React, Next.js, TypeScript, and Tailwind
+              </strong>{" "}
+              - increasingly at the intersection of frontend and AI, shipping
+              things like streamed, LLM-powered tools and the cross-chain DeFi
+              flows behind them. I&apos;m not chasing my next job title -
+              I&apos;m chasing the next thing to learn, and I treat every
+              project as a chance to grow.{" "}
+              <br/><strong className="text-pink-400">
                 The world is your oyster
               </strong>{" "}
               🌍
